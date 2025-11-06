@@ -1,0 +1,30 @@
+sweeps: 200
+burn_in: 20
+thinning: 1
+ladder:
+  replicas: 2
+  base_temperature: 1.0
+  policy:
+    type: manual
+    temperatures: [1.0, 30.0]
+move_counts:
+  generator_flips: 2
+  row_ops: 2
+  graph_rewires: 2
+  worm_moves: 8
+checkpoint:
+  interval: 0
+  directory: checkpoints
+  max_to_keep: 4
+scoring:
+  cmdl: 1.0
+  spec: 0.8
+  curv: 0.4
+seed_policy:
+  master_seed: 4242
+  label: "coverage-worm"
+output:
+  metrics_file: metrics.csv
+  manifest_file: manifest.json
+  checkpoint_dir: checkpoints
+  end_state_dir: end_state

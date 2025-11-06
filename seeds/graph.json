@@ -1,0 +1,36 @@
+{
+  "config": {
+    "causal_mode": true,
+    "max_in_degree": 4,
+    "max_out_degree": 4,
+    "k_uniform": {
+      "Balanced": {
+        "sources": 2,
+        "destinations": 2
+      }
+    },
+    "schema_version": {
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    }
+  },
+  "nodes": [true, true, true, true, true, true],
+  "edges": [
+    {
+      "alive": true,
+      "sources": [0, 1],
+      "destinations": [2, 3]
+    },
+    {
+      "alive": true,
+      "sources": [1, 2],
+      "destinations": [3, 4]
+    },
+    {
+      "alive": true,
+      "sources": [2, 3],
+      "destinations": [4, 5]
+    }
+  ]
+}

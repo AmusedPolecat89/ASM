@@ -1,0 +1,79 @@
+{
+  "sweep": 120,
+  "config": {
+    "sweeps": 240,
+    "burn_in": 30,
+    "thinning": 1,
+    "ladder": {
+      "replicas": 3,
+      "base_temperature": 1.0,
+      "policy": {
+        "type": "geometric",
+        "ratio": 1.4
+      }
+    },
+    "move_counts": {
+      "generator_flips": 3,
+      "row_ops": 2,
+      "graph_rewires": 3,
+      "worm_moves": 2
+    },
+    "checkpoint": {
+      "interval": 60,
+      "directory": "checkpoints",
+      "max_to_keep": 6
+    },
+    "scoring": {
+      "cmdl": 1.0,
+      "spec": 0.8,
+      "curv": 0.4
+    },
+    "seed_policy": {
+      "master_seed": 6060,
+      "label": "e2e"
+    },
+    "output": {
+      "run_directory": "runs/t7/",
+      "metrics_file": "metrics.csv",
+      "manifest_file": "manifest.json",
+      "checkpoint_dir": "checkpoints",
+      "end_state_dir": "end_state"
+    }
+  },
+  "master_seed": 6060,
+  "replicas": [
+    {
+      "temperature": 1.9599999999999997,
+      "code_json": "{\n  \"schema_version\": {\n    \"major\": 1,\n    \"minor\": 0,\n    \"patch\": 0\n  },\n  \"provenance\": {\n    \"input_hash\": \"seed-state\",\n    \"graph_hash\": \"\",\n    \"code_hash\": \"a39bb73c575ee5133c0d845190304113ace9b48a0d0f5a23dcbe1e78951272fa\",\n    \"seed\": 42,\n    \"created_at\": \"2025-01-01T00:00:00Z\",\n    \"tool_versions\": {}\n  },\n  \"num_variables\": 4,\n  \"x_checks\": [\n    [\n      0,\n      1\n    ],\n    [\n      0,\n      1,\n      2,\n      3\n    ]\n  ],\n  \"z_checks\": [\n    [\n      0,\n      1\n    ],\n    [\n      0,\n      1,\n      2,\n      3\n    ]\n  ],\n  \"rank_x\": 2,\n  \"rank_z\": 2\n}",
+      "graph_json": "{\n  \"config\": {\n    \"causal_mode\": true,\n    \"max_in_degree\": 4,\n    \"max_out_degree\": 4,\n    \"k_uniform\": {\n      \"Balanced\": {\n        \"sources\": 2,\n        \"destinations\": 2\n      }\n    },\n    \"schema_version\": {\n      \"major\": 2,\n      \"minor\": 0,\n      \"patch\": 0\n    }\n  },\n  \"nodes\": [\n    true,\n    true,\n    true,\n    true,\n    true,\n    true\n  ],\n  \"edges\": [\n    {\n      \"alive\": true,\n      \"sources\": [\n        0,\n        1\n      ],\n      \"destinations\": [\n        4,\n        5\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        1,\n        2\n      ],\n      \"destinations\": [\n        4,\n        5\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        2,\n        3\n      ],\n      \"destinations\": [\n        0,\n        1\n      ]\n    }\n  ]\n}",
+      "energy": {
+        "cmdl": 9.426015131959808,
+        "spec": 1.994052230060813,
+        "curv": 0.03207517383346932,
+        "total": 11.034086985541846
+      }
+    },
+    {
+      "temperature": 1.4,
+      "code_json": "{\n  \"schema_version\": {\n    \"major\": 1,\n    \"minor\": 0,\n    \"patch\": 0\n  },\n  \"provenance\": {\n    \"input_hash\": \"seed-state\",\n    \"graph_hash\": \"\",\n    \"code_hash\": \"ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4\",\n    \"seed\": 42,\n    \"created_at\": \"2025-01-01T00:00:00Z\",\n    \"tool_versions\": {}\n  },\n  \"num_variables\": 4,\n  \"x_checks\": [\n    [\n      0,\n      1\n    ],\n    [\n      2,\n      3\n    ]\n  ],\n  \"z_checks\": [\n    [\n      0,\n      1,\n      2,\n      3\n    ],\n    [\n      2,\n      3\n    ]\n  ],\n  \"rank_x\": 2,\n  \"rank_z\": 2\n}",
+      "graph_json": "{\n  \"config\": {\n    \"causal_mode\": true,\n    \"max_in_degree\": 4,\n    \"max_out_degree\": 4,\n    \"k_uniform\": {\n      \"Balanced\": {\n        \"sources\": 2,\n        \"destinations\": 2\n      }\n    },\n    \"schema_version\": {\n      \"major\": 2,\n      \"minor\": 0,\n      \"patch\": 0\n    }\n  },\n  \"nodes\": [\n    true,\n    true,\n    true,\n    true,\n    true,\n    true\n  ],\n  \"edges\": [\n    {\n      \"alive\": true,\n      \"sources\": [\n        0,\n        1\n      ],\n      \"destinations\": [\n        4,\n        5\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        1,\n        2\n      ],\n      \"destinations\": [\n        0,\n        4\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        2,\n        3\n      ],\n      \"destinations\": [\n        1,\n        4\n      ]\n    }\n  ]\n}",
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003686555200071398,
+        "total": 10.27692738452532
+      }
+    },
+    {
+      "temperature": 1.0,
+      "code_json": "{\n  \"schema_version\": {\n    \"major\": 1,\n    \"minor\": 0,\n    \"patch\": 0\n  },\n  \"provenance\": {\n    \"input_hash\": \"seed-state\",\n    \"graph_hash\": \"\",\n    \"code_hash\": \"e0ef94c5ccd545c61a358f1a62e9b8717c3756321e8988d27c4e922ca8b21693\",\n    \"seed\": 42,\n    \"created_at\": \"2025-01-01T00:00:00Z\",\n    \"tool_versions\": {}\n  },\n  \"num_variables\": 4,\n  \"x_checks\": [\n    [\n      0,\n      1\n    ],\n    [\n      2,\n      3\n    ]\n  ],\n  \"z_checks\": [\n    [\n      0,\n      1\n    ],\n    [\n      0,\n      1,\n      2,\n      3\n    ]\n  ],\n  \"rank_x\": 2,\n  \"rank_z\": 2\n}",
+      "graph_json": "{\n  \"config\": {\n    \"causal_mode\": true,\n    \"max_in_degree\": 4,\n    \"max_out_degree\": 4,\n    \"k_uniform\": {\n      \"Balanced\": {\n        \"sources\": 2,\n        \"destinations\": 2\n      }\n    },\n    \"schema_version\": {\n      \"major\": 2,\n      \"minor\": 0,\n      \"patch\": 0\n    }\n  },\n  \"nodes\": [\n    true,\n    true,\n    true,\n    true,\n    true,\n    true\n  ],\n  \"edges\": [\n    {\n      \"alive\": true,\n      \"sources\": [\n        0,\n        1\n      ],\n      \"destinations\": [\n        4,\n        5\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        1,\n        2\n      ],\n      \"destinations\": [\n        0,\n        4\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        2,\n        3\n      ],\n      \"destinations\": [\n        0,\n        1\n      ]\n    }\n  ]\n}",
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.014746220616320554,
+        "total": 10.179984973664778
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "average_jaccard": 0.7407872696817412,
+  "effective_sample_size": 114.8905460668752,
+  "exchange_acceptance": [],
+  "exchange_acceptance_mean": 0.0,
+  "jaccard_lag_decay": 0.25921273031825875,
+  "unique_structural_hashes": 97,
+  "worm_samples": 7
+}

@@ -1,0 +1,30 @@
+sweeps: 160
+burn_in: 20
+thinning: 1
+ladder:
+  replicas: 2
+  base_temperature: 1.0
+  policy:
+    type: geometric
+    ratio: 1.4
+move_counts:
+  generator_flips: 0
+  row_ops: 0
+  graph_rewires: 0
+  worm_moves: 0
+checkpoint:
+  interval: 40
+  directory: checkpoints
+  max_to_keep: 5
+scoring:
+  cmdl: 1.0
+  spec: 0.9
+  curv: 0.5
+seed_policy:
+  master_seed: 9002
+  label: "topo-deg-up"
+output:
+  metrics_file: metrics.csv
+  manifest_file: manifest.json
+  checkpoint_dir: checkpoints
+  end_state_dir: end_state

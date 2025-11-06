@@ -1,0 +1,27 @@
+[package]
+name = "asm-mcmc"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[dependencies]
+asm-core = { path = "../asm-core" }
+asm-graph = { path = "../asm-graph" }
+asm-code = { path = "../asm-code" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_yaml = "0.9"
+rand = { workspace = true }
+sha2 = { workspace = true }
+thiserror = { workspace = true }
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+indexmap = "2.1"
+
+[dev-dependencies]
+tempfile = "3.8"
+criterion = { workspace = true }
+
+[[bench]]
+name = "sweep_throughput"
+harness = false

@@ -1,0 +1,1528 @@
+{
+  "acceptance_rates": {
+    "generator-flip": 0.0,
+    "graph-retarget": 0.16666666666666666,
+    "graph-swap-targets": 0.14166666666666666,
+    "row-op": 0.6041666666666666,
+    "worm-sample": 1.0
+  },
+  "replica_temperatures": [
+    1.0
+  ],
+  "exchange_acceptance": [],
+  "coverage": {
+    "unique_state_hashes": 53,
+    "worm_samples": 7,
+    "mean_energy": 9.781461972547115,
+    "energy_variance": 0.5603746798884686,
+    "average_jaccard": 0.6904040404040407
+  },
+  "effective_sample_size": 59.157454436809076,
+  "final_code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+  "final_graph_hash": "59101e25112da6f3faaf8e8819478a3010ca8ee92a4d6a46ac2428737dd176b5",
+  "metrics_path": "runs/t1_seed0/metrics.csv",
+  "manifest_path": "runs/t1_seed0/manifest.json",
+  "checkpoints": [],
+  "samples": [
+    {
+      "sweep": 20,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.01474621748891733,
+        "total": 10.114877643745544
+      },
+      "accepted_moves": 57,
+      "proposed_moves": 147,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "477a6e7000bb54bdf743bc94b69d6ef2c295ce7b4482b63a20da04a1880b82bb"
+    },
+    {
+      "sweep": 21,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.426015131959808,
+        "spec": 1.994052230060813,
+        "curv": 0.003783004115680194,
+        "total": 10.82298659423708
+      },
+      "accepted_moves": 61,
+      "proposed_moves": 154,
+      "code_hash": "a39bb73c575ee5133c0d845190304113ace9b48a0d0f5a23dcbe1e78951272fa",
+      "graph_hash": "78ad0e85e6ac4bd8e3f84e53beafbdca254ce381d032e954aa8b16a0c592bd4b"
+    },
+    {
+      "sweep": 22,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783004115680194,
+        "total": 10.111588679733572
+      },
+      "accepted_moves": 64,
+      "proposed_moves": 161,
+      "code_hash": "37fb4f792e7711ae484f43a7bc058e81d9f0edf9458ead1975e4c64f87d7fe50",
+      "graph_hash": "78ad0e85e6ac4bd8e3f84e53beafbdca254ce381d032e954aa8b16a0c592bd4b"
+    },
+    {
+      "sweep": 23,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783004115680194,
+        "total": 8.847458211175981
+      },
+      "accepted_moves": 66,
+      "proposed_moves": 168,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "78ad0e85e6ac4bd8e3f84e53beafbdca254ce381d032e954aa8b16a0c592bd4b"
+    },
+    {
+      "sweep": 24,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.52738140898685,
+        "spec": 1.994052230060813,
+        "curv": 0.012056321411589743,
+        "total": 10.926834866452896
+      },
+      "accepted_moves": 71,
+      "proposed_moves": 175,
+      "code_hash": "add7568bcb823fd00997ce6278d7a75845bb26d203e2d0bf6169331863a2f55b",
+      "graph_hash": "f530f4558d98a2b65ab963900e0e1247665c6cf675279edeed17630cf12f46ac"
+    },
+    {
+      "sweep": 25,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.012056321411589743,
+        "total": 10.114070674922345
+      },
+      "accepted_moves": 75,
+      "proposed_moves": 182,
+      "code_hash": "37fb4f792e7711ae484f43a7bc058e81d9f0edf9458ead1975e4c64f87d7fe50",
+      "graph_hash": "f530f4558d98a2b65ab963900e0e1247665c6cf675279edeed17630cf12f46ac"
+    },
+    {
+      "sweep": 26,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.0,
+        "total": 8.846323309941278
+      },
+      "accepted_moves": 79,
+      "proposed_moves": 189,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "ea9cf92580e4620cfd54b8e2fcdcdc161536047f64b8ce95b75075e7965fbd47"
+    },
+    {
+      "sweep": 27,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.0,
+        "total": 10.110453778498869
+      },
+      "accepted_moves": 81,
+      "proposed_moves": 196,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "ea9cf92580e4620cfd54b8e2fcdcdc161536047f64b8ce95b75075e7965fbd47"
+    },
+    {
+      "sweep": 28,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.013213728267102376,
+        "total": 10.114417896978999
+      },
+      "accepted_moves": 85,
+      "proposed_moves": 203,
+      "code_hash": "37fb4f792e7711ae484f43a7bc058e81d9f0edf9458ead1975e4c64f87d7fe50",
+      "graph_hash": "f1af38799aeb1d734ac3cfe2c502b5205cbe1a7d7e21d4858981605ff66230b6"
+    },
+    {
+      "sweep": 29,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.52738140898685,
+        "spec": 1.994052230060813,
+        "curv": 0.0,
+        "total": 10.92321797002942
+      },
+      "accepted_moves": 89,
+      "proposed_moves": 210,
+      "code_hash": "add7568bcb823fd00997ce6278d7a75845bb26d203e2d0bf6169331863a2f55b",
+      "graph_hash": "ea9cf92580e4620cfd54b8e2fcdcdc161536047f64b8ce95b75075e7965fbd47"
+    },
+    {
+      "sweep": 30,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.013213728267102376,
+        "total": 10.013051619951957
+      },
+      "accepted_moves": 92,
+      "proposed_moves": 217,
+      "code_hash": "e0ef94c5ccd545c61a358f1a62e9b8717c3756321e8988d27c4e922ca8b21693",
+      "graph_hash": "f1af38799aeb1d734ac3cfe2c502b5205cbe1a7d7e21d4858981605ff66230b6"
+    },
+    {
+      "sweep": 31,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.013213728267102376,
+        "total": 10.114417896978999
+      },
+      "accepted_moves": 94,
+      "proposed_moves": 224,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "f1af38799aeb1d734ac3cfe2c502b5205cbe1a7d7e21d4858981605ff66230b6"
+    },
+    {
+      "sweep": 32,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.013213728267102376,
+        "total": 10.114417896978999
+      },
+      "accepted_moves": 98,
+      "proposed_moves": 231,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "f1af38799aeb1d734ac3cfe2c502b5205cbe1a7d7e21d4858981605ff66230b6"
+    },
+    {
+      "sweep": 33,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.010222403196337
+      },
+      "accepted_moves": 101,
+      "proposed_moves": 238,
+      "code_hash": "e0ef94c5ccd545c61a358f1a62e9b8717c3756321e8988d27c4e922ca8b21693",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 34,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.11158868022338
+      },
+      "accepted_moves": 103,
+      "proposed_moves": 245,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 35,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.628747686013892,
+        "spec": 1.994052230060813,
+        "curv": 0.0,
+        "total": 11.02458424705646
+      },
+      "accepted_moves": 107,
+      "proposed_moves": 252,
+      "code_hash": "dd8aaa740719d6cc4ac66daf2123a7934a987a11dc3d239411688084c4b1dd05",
+      "graph_hash": "c2de3206fbbb31f0a881c3698296c8fbcc69e1600acebcebe16affab342fdcd9"
+    },
+    {
+      "sweep": 36,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.426015131959808,
+        "spec": 1.994052230060813,
+        "curv": 0.0,
+        "total": 10.821851693002376
+      },
+      "accepted_moves": 110,
+      "proposed_moves": 259,
+      "code_hash": "a39bb73c575ee5133c0d845190304113ace9b48a0d0f5a23dcbe1e78951272fa",
+      "graph_hash": "c2de3206fbbb31f0a881c3698296c8fbcc69e1600acebcebe16affab342fdcd9"
+    },
+    {
+      "sweep": 37,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.013213728267102376,
+        "total": 10.013051619951957
+      },
+      "accepted_moves": 113,
+      "proposed_moves": 266,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "7a9f7ff467da5eeb9cd2517f093ca7c2434cae5c5c9a00b49be6fb7f0e7d865f"
+    },
+    {
+      "sweep": 38,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.013213728267102376,
+        "total": 10.013051619951957
+      },
+      "accepted_moves": 117,
+      "proposed_moves": 273,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "7a9f7ff467da5eeb9cd2517f093ca7c2434cae5c5c9a00b49be6fb7f0e7d865f"
+    },
+    {
+      "sweep": 39,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.0,
+        "total": 10.110453778498869
+      },
+      "accepted_moves": 120,
+      "proposed_moves": 280,
+      "code_hash": "37fb4f792e7711ae484f43a7bc058e81d9f0edf9458ead1975e4c64f87d7fe50",
+      "graph_hash": "c2de3206fbbb31f0a881c3698296c8fbcc69e1600acebcebe16affab342fdcd9"
+    },
+    {
+      "sweep": 40,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.0,
+        "total": 10.009087501471827
+      },
+      "accepted_moves": 123,
+      "proposed_moves": 287,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "c2de3206fbbb31f0a881c3698296c8fbcc69e1600acebcebe16affab342fdcd9"
+    },
+    {
+      "sweep": 41,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.52738140898685,
+        "spec": 1.994052230060813,
+        "curv": 0.0,
+        "total": 10.92321797002942
+      },
+      "accepted_moves": 127,
+      "proposed_moves": 294,
+      "code_hash": "add7568bcb823fd00997ce6278d7a75845bb26d203e2d0bf6169331863a2f55b",
+      "graph_hash": "c2de3206fbbb31f0a881c3698296c8fbcc69e1600acebcebe16affab342fdcd9"
+    },
+    {
+      "sweep": 42,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.010222403196337
+      },
+      "accepted_moves": 130,
+      "proposed_moves": 301,
+      "code_hash": "e0ef94c5ccd545c61a358f1a62e9b8717c3756321e8988d27c4e922ca8b21693",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 43,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.11158868022338
+      },
+      "accepted_moves": 132,
+      "proposed_moves": 308,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 44,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.52738140898685,
+        "spec": 1.994052230060813,
+        "curv": 0.003783005748368498,
+        "total": 10.92435287175393
+      },
+      "accepted_moves": 135,
+      "proposed_moves": 315,
+      "code_hash": "b819c5c90ea00d67796595bc41a6b54392b5ee90cb8ab940ccd89c604c81553a",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 45,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783005748368498,
+        "total": 8.847458211665788
+      },
+      "accepted_moves": 138,
+      "proposed_moves": 322,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 46,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783005748368498,
+        "total": 8.847458211665788
+      },
+      "accepted_moves": 139,
+      "proposed_moves": 329,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 47,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783005748368498,
+        "total": 8.847458211665788
+      },
+      "accepted_moves": 140,
+      "proposed_moves": 336,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 48,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.11158868022338
+      },
+      "accepted_moves": 142,
+      "proposed_moves": 343,
+      "code_hash": "37fb4f792e7711ae484f43a7bc058e81d9f0edf9458ead1975e4c64f87d7fe50",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 49,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783005748368498,
+        "total": 8.847458211665788
+      },
+      "accepted_moves": 144,
+      "proposed_moves": 350,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 50,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783005748368498,
+        "total": 8.847458211665788
+      },
+      "accepted_moves": 145,
+      "proposed_moves": 357,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 51,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783005748368498,
+        "total": 8.847458211665788
+      },
+      "accepted_moves": 146,
+      "proposed_moves": 364,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 52,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.010222403196337
+      },
+      "accepted_moves": 148,
+      "proposed_moves": 371,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 53,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.010222403196337
+      },
+      "accepted_moves": 151,
+      "proposed_moves": 378,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 54,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.11158868022338
+      },
+      "accepted_moves": 153,
+      "proposed_moves": 385,
+      "code_hash": "37fb4f792e7711ae484f43a7bc058e81d9f0edf9458ead1975e4c64f87d7fe50",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 55,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.52738140898685,
+        "spec": 1.994052230060813,
+        "curv": 0.003783005748368498,
+        "total": 10.92435287175393
+      },
+      "accepted_moves": 156,
+      "proposed_moves": 392,
+      "code_hash": "b819c5c90ea00d67796595bc41a6b54392b5ee90cb8ab940ccd89c604c81553a",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 56,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.010222403196337
+      },
+      "accepted_moves": 158,
+      "proposed_moves": 399,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 57,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.010222403196337
+      },
+      "accepted_moves": 161,
+      "proposed_moves": 406,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 58,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715362995535988,
+        "total": 8.847737918839938
+      },
+      "accepted_moves": 164,
+      "proposed_moves": 413,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 59,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715362995535988,
+        "total": 8.847737918839938
+      },
+      "accepted_moves": 167,
+      "proposed_moves": 420,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 60,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715362995535988,
+        "total": 8.847737918839938
+      },
+      "accepted_moves": 168,
+      "proposed_moves": 427,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 61,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715362995535988,
+        "total": 8.847737918839938
+      },
+      "accepted_moves": 169,
+      "proposed_moves": 434,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 62,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715362995535988,
+        "total": 8.847737918839938
+      },
+      "accepted_moves": 170,
+      "proposed_moves": 441,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 63,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715362995535988,
+        "total": 8.847737918839938
+      },
+      "accepted_moves": 171,
+      "proposed_moves": 448,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 64,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.004715362995535988,
+        "total": 10.111868387397529
+      },
+      "accepted_moves": 173,
+      "proposed_moves": 455,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 65,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715362995535988,
+        "total": 8.847737918839938
+      },
+      "accepted_moves": 175,
+      "proposed_moves": 462,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 66,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715362995535988,
+        "total": 8.847737918839938
+      },
+      "accepted_moves": 178,
+      "proposed_moves": 469,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 67,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715362995535988,
+        "total": 8.847737918839938
+      },
+      "accepted_moves": 179,
+      "proposed_moves": 476,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 68,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.004715362995535988,
+        "total": 10.010502110370487
+      },
+      "accepted_moves": 182,
+      "proposed_moves": 483,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 69,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.52738140898685,
+        "spec": 1.994052230060813,
+        "curv": 0.004715362995535988,
+        "total": 10.92463257892808
+      },
+      "accepted_moves": 185,
+      "proposed_moves": 490,
+      "code_hash": "add7568bcb823fd00997ce6278d7a75845bb26d203e2d0bf6169331863a2f55b",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 70,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.426015131959808,
+        "spec": 1.994052230060813,
+        "curv": 0.004715362995535988,
+        "total": 10.823266301901036
+      },
+      "accepted_moves": 188,
+      "proposed_moves": 497,
+      "code_hash": "a39bb73c575ee5133c0d845190304113ace9b48a0d0f5a23dcbe1e78951272fa",
+      "graph_hash": "59042c9fb601210cfc9b8286016a6f882dee5c8e5477a4f07a9c331f27ca965a"
+    },
+    {
+      "sweep": 71,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783005748368498,
+        "total": 8.847458211665788
+      },
+      "accepted_moves": 192,
+      "proposed_moves": 504,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 72,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.11158868022338
+      },
+      "accepted_moves": 194,
+      "proposed_moves": 511,
+      "code_hash": "37fb4f792e7711ae484f43a7bc058e81d9f0edf9458ead1975e4c64f87d7fe50",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 73,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783005748368498,
+        "total": 8.847458211665788
+      },
+      "accepted_moves": 196,
+      "proposed_moves": 518,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 74,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.11158868022338
+      },
+      "accepted_moves": 198,
+      "proposed_moves": 525,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 75,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.52738140898685,
+        "spec": 1.994052230060813,
+        "curv": 0.003783005748368498,
+        "total": 10.92435287175393
+      },
+      "accepted_moves": 201,
+      "proposed_moves": 532,
+      "code_hash": "add7568bcb823fd00997ce6278d7a75845bb26d203e2d0bf6169331863a2f55b",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 76,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.010222403196337
+      },
+      "accepted_moves": 204,
+      "proposed_moves": 539,
+      "code_hash": "e0ef94c5ccd545c61a358f1a62e9b8717c3756321e8988d27c4e922ca8b21693",
+      "graph_hash": "db945cc6f1d0af6908317e0b3a7ea25ea1542be4b3970cf02da8efd55bbbd34e"
+    },
+    {
+      "sweep": 77,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.0,
+        "total": 8.846323309941278
+      },
+      "accepted_moves": 207,
+      "proposed_moves": 546,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "c2de3206fbbb31f0a881c3698296c8fbcc69e1600acebcebe16affab342fdcd9"
+    },
+    {
+      "sweep": 78,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783004115680194,
+        "total": 8.847458211175981
+      },
+      "accepted_moves": 209,
+      "proposed_moves": 553,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "4da6100fe7161c460f16c796dd7434e0f52e47fae128362a5f4a27d3a2159e05"
+    },
+    {
+      "sweep": 79,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.012056321411589743,
+        "total": 8.849940206364755
+      },
+      "accepted_moves": 213,
+      "proposed_moves": 560,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "f4fa12f369fbdcbf05623039f97ea0f4fcb9175725d7f044b4137a85813292a7"
+    },
+    {
+      "sweep": 80,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.012056321411589743,
+        "total": 8.849940206364755
+      },
+      "accepted_moves": 214,
+      "proposed_moves": 567,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "f4fa12f369fbdcbf05623039f97ea0f4fcb9175725d7f044b4137a85813292a7"
+    },
+    {
+      "sweep": 81,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.012056321411589743,
+        "total": 10.012704397895304
+      },
+      "accepted_moves": 216,
+      "proposed_moves": 574,
+      "code_hash": "e0ef94c5ccd545c61a358f1a62e9b8717c3756321e8988d27c4e922ca8b21693",
+      "graph_hash": "f4fa12f369fbdcbf05623039f97ea0f4fcb9175725d7f044b4137a85813292a7"
+    },
+    {
+      "sweep": 82,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.012056321411589743,
+        "total": 10.012704397895304
+      },
+      "accepted_moves": 217,
+      "proposed_moves": 581,
+      "code_hash": "e0ef94c5ccd545c61a358f1a62e9b8717c3756321e8988d27c4e922ca8b21693",
+      "graph_hash": "f4fa12f369fbdcbf05623039f97ea0f4fcb9175725d7f044b4137a85813292a7"
+    },
+    {
+      "sweep": 83,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.012056321411589743,
+        "total": 10.012704397895304
+      },
+      "accepted_moves": 220,
+      "proposed_moves": 588,
+      "code_hash": "e0ef94c5ccd545c61a358f1a62e9b8717c3756321e8988d27c4e922ca8b21693",
+      "graph_hash": "f4fa12f369fbdcbf05623039f97ea0f4fcb9175725d7f044b4137a85813292a7"
+    },
+    {
+      "sweep": 84,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.52738140898685,
+        "spec": 1.994052230060813,
+        "curv": 0.012056321411589743,
+        "total": 10.926834866452896
+      },
+      "accepted_moves": 222,
+      "proposed_moves": 595,
+      "code_hash": "add7568bcb823fd00997ce6278d7a75845bb26d203e2d0bf6169331863a2f55b",
+      "graph_hash": "f4fa12f369fbdcbf05623039f97ea0f4fcb9175725d7f044b4137a85813292a7"
+    },
+    {
+      "sweep": 85,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.426015131959808,
+        "spec": 1.994052230060813,
+        "curv": 0.012056321411589743,
+        "total": 10.825468589425853
+      },
+      "accepted_moves": 225,
+      "proposed_moves": 602,
+      "code_hash": "a39bb73c575ee5133c0d845190304113ace9b48a0d0f5a23dcbe1e78951272fa",
+      "graph_hash": "f4fa12f369fbdcbf05623039f97ea0f4fcb9175725d7f044b4137a85813292a7"
+    },
+    {
+      "sweep": 86,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.012056321411589743,
+        "total": 8.849940206364755
+      },
+      "accepted_moves": 228,
+      "proposed_moves": 609,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "f4fa12f369fbdcbf05623039f97ea0f4fcb9175725d7f044b4137a85813292a7"
+    },
+    {
+      "sweep": 87,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.012056321411589743,
+        "total": 8.849940206364755
+      },
+      "accepted_moves": 229,
+      "proposed_moves": 616,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "f4fa12f369fbdcbf05623039f97ea0f4fcb9175725d7f044b4137a85813292a7"
+    },
+    {
+      "sweep": 88,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783005748368498,
+        "total": 8.847458211665788
+      },
+      "accepted_moves": 232,
+      "proposed_moves": 623,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 89,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783005748368498,
+        "total": 8.847458211665788
+      },
+      "accepted_moves": 233,
+      "proposed_moves": 630,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 90,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.010222403196337
+      },
+      "accepted_moves": 235,
+      "proposed_moves": 637,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 91,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.52738140898685,
+        "spec": 1.994052230060813,
+        "curv": 0.003783005748368498,
+        "total": 10.92435287175393
+      },
+      "accepted_moves": 237,
+      "proposed_moves": 644,
+      "code_hash": "b819c5c90ea00d67796595bc41a6b54392b5ee90cb8ab940ccd89c604c81553a",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 92,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.010222403196337
+      },
+      "accepted_moves": 239,
+      "proposed_moves": 651,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 93,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.426015131959808,
+        "spec": 1.994052230060813,
+        "curv": 0.003783005748368498,
+        "total": 10.822986594726887
+      },
+      "accepted_moves": 242,
+      "proposed_moves": 658,
+      "code_hash": "a39bb73c575ee5133c0d845190304113ace9b48a0d0f5a23dcbe1e78951272fa",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 94,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.11158868022338
+      },
+      "accepted_moves": 245,
+      "proposed_moves": 665,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 95,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003783005748368498,
+        "total": 8.847458211665788
+      },
+      "accepted_moves": 247,
+      "proposed_moves": 672,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 96,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.11158868022338
+      },
+      "accepted_moves": 249,
+      "proposed_moves": 679,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 97,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.11158868022338
+      },
+      "accepted_moves": 250,
+      "proposed_moves": 686,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 98,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.11158868022338
+      },
+      "accepted_moves": 253,
+      "proposed_moves": 693,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 99,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.11158868022338
+      },
+      "accepted_moves": 256,
+      "proposed_moves": 700,
+      "code_hash": "37fb4f792e7711ae484f43a7bc058e81d9f0edf9458ead1975e4c64f87d7fe50",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 100,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783005748368498,
+        "total": 10.010222403196337
+      },
+      "accepted_moves": 259,
+      "proposed_moves": 707,
+      "code_hash": "e0ef94c5ccd545c61a358f1a62e9b8717c3756321e8988d27c4e922ca8b21693",
+      "graph_hash": "c3aa942d8d289ef5ab826ba4f6375bc512112d70068804f2d232a69f8ffda638"
+    },
+    {
+      "sweep": 101,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715361799763965,
+        "total": 8.847737918481208
+      },
+      "accepted_moves": 262,
+      "proposed_moves": 714,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "135fb4e00de8c99e36a10ff2240a62c61ec58b106bccddc9e235b697a783a7df"
+    },
+    {
+      "sweep": 102,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715361799763965,
+        "total": 8.847737918481208
+      },
+      "accepted_moves": 263,
+      "proposed_moves": 721,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "135fb4e00de8c99e36a10ff2240a62c61ec58b106bccddc9e235b697a783a7df"
+    },
+    {
+      "sweep": 103,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.004715361799763965,
+        "total": 10.111868387038799
+      },
+      "accepted_moves": 265,
+      "proposed_moves": 728,
+      "code_hash": "37fb4f792e7711ae484f43a7bc058e81d9f0edf9458ead1975e4c64f87d7fe50",
+      "graph_hash": "135fb4e00de8c99e36a10ff2240a62c61ec58b106bccddc9e235b697a783a7df"
+    },
+    {
+      "sweep": 104,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.004715361799763965,
+        "total": 10.111868387038799
+      },
+      "accepted_moves": 266,
+      "proposed_moves": 735,
+      "code_hash": "37fb4f792e7711ae484f43a7bc058e81d9f0edf9458ead1975e4c64f87d7fe50",
+      "graph_hash": "135fb4e00de8c99e36a10ff2240a62c61ec58b106bccddc9e235b697a783a7df"
+    },
+    {
+      "sweep": 105,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.628747686013892,
+        "spec": 1.994052230060813,
+        "curv": 0.004715361799763965,
+        "total": 11.02599885559639
+      },
+      "accepted_moves": 269,
+      "proposed_moves": 742,
+      "code_hash": "dd8aaa740719d6cc4ac66daf2123a7934a987a11dc3d239411688084c4b1dd05",
+      "graph_hash": "135fb4e00de8c99e36a10ff2240a62c61ec58b106bccddc9e235b697a783a7df"
+    },
+    {
+      "sweep": 106,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.004715361799763965,
+        "total": 10.111868387038799
+      },
+      "accepted_moves": 271,
+      "proposed_moves": 749,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "135fb4e00de8c99e36a10ff2240a62c61ec58b106bccddc9e235b697a783a7df"
+    },
+    {
+      "sweep": 107,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.004715361799763965,
+        "total": 10.010502110011757
+      },
+      "accepted_moves": 273,
+      "proposed_moves": 756,
+      "code_hash": "e0ef94c5ccd545c61a358f1a62e9b8717c3756321e8988d27c4e922ca8b21693",
+      "graph_hash": "135fb4e00de8c99e36a10ff2240a62c61ec58b106bccddc9e235b697a783a7df"
+    },
+    {
+      "sweep": 108,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 9.52738140898685,
+        "spec": 1.994052230060813,
+        "curv": 0.004715361799763965,
+        "total": 10.92463257856935
+      },
+      "accepted_moves": 276,
+      "proposed_moves": 763,
+      "code_hash": "b819c5c90ea00d67796595bc41a6b54392b5ee90cb8ab940ccd89c604c81553a",
+      "graph_hash": "135fb4e00de8c99e36a10ff2240a62c61ec58b106bccddc9e235b697a783a7df"
+    },
+    {
+      "sweep": 109,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.004715361799763965,
+        "total": 10.010502110011757
+      },
+      "accepted_moves": 279,
+      "proposed_moves": 770,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "135fb4e00de8c99e36a10ff2240a62c61ec58b106bccddc9e235b697a783a7df"
+    },
+    {
+      "sweep": 110,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.004715361799763965,
+        "total": 10.111868387038799
+      },
+      "accepted_moves": 281,
+      "proposed_moves": 777,
+      "code_hash": "37fb4f792e7711ae484f43a7bc058e81d9f0edf9458ead1975e4c64f87d7fe50",
+      "graph_hash": "135fb4e00de8c99e36a10ff2240a62c61ec58b106bccddc9e235b697a783a7df"
+    },
+    {
+      "sweep": 111,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.012056321411589743,
+        "total": 8.849940206364755
+      },
+      "accepted_moves": 284,
+      "proposed_moves": 784,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "f4fa12f369fbdcbf05623039f97ea0f4fcb9175725d7f044b4137a85813292a7"
+    },
+    {
+      "sweep": 112,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.012056321411589743,
+        "total": 8.849940206364755
+      },
+      "accepted_moves": 286,
+      "proposed_moves": 791,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "f4fa12f369fbdcbf05623039f97ea0f4fcb9175725d7f044b4137a85813292a7"
+    },
+    {
+      "sweep": 113,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.955460890873905,
+        "spec": 1.6499898394642347,
+        "curv": 0.003783004115680194,
+        "total": 10.111588679733572
+      },
+      "accepted_moves": 289,
+      "proposed_moves": 798,
+      "code_hash": "ad0af986d2744d87c717a1e05b8aa6604db9a4b62af02b30ae93a28db87b59a4",
+      "graph_hash": "73f5efc94321c0e66c0fa4f3f14fc0dc6d7fb02e79dc6c80c214d626eea2f3d2"
+    },
+    {
+      "sweep": 114,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.004715361293860368,
+        "total": 10.010502109859985
+      },
+      "accepted_moves": 294,
+      "proposed_moves": 805,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "59101e25112da6f3faaf8e8819478a3010ca8ee92a4d6a46ac2428737dd176b5"
+    },
+    {
+      "sweep": 115,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.004715361293860368,
+        "total": 10.010502109859985
+      },
+      "accepted_moves": 295,
+      "proposed_moves": 812,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "59101e25112da6f3faaf8e8819478a3010ca8ee92a4d6a46ac2428737dd176b5"
+    },
+    {
+      "sweep": 116,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.854094613846863,
+        "spec": 1.6499898394642347,
+        "curv": 0.004715361293860368,
+        "total": 10.010502109859985
+      },
+      "accepted_moves": 296,
+      "proposed_moves": 819,
+      "code_hash": "179d211e904b384de637ac5c99ce3bad1104e52a8a61888bd31de143abfafd09",
+      "graph_hash": "59101e25112da6f3faaf8e8819478a3010ca8ee92a4d6a46ac2428737dd176b5"
+    },
+    {
+      "sweep": 117,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715361293860368,
+        "total": 8.847737918329436
+      },
+      "accepted_moves": 298,
+      "proposed_moves": 826,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59101e25112da6f3faaf8e8819478a3010ca8ee92a4d6a46ac2428737dd176b5"
+    },
+    {
+      "sweep": 118,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715361293860368,
+        "total": 8.847737918329436
+      },
+      "accepted_moves": 299,
+      "proposed_moves": 833,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59101e25112da6f3faaf8e8819478a3010ca8ee92a4d6a46ac2428737dd176b5"
+    },
+    {
+      "sweep": 119,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.004715361293860368,
+        "total": 8.847737918329436
+      },
+      "accepted_moves": 302,
+      "proposed_moves": 840,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "59101e25112da6f3faaf8e8819478a3010ca8ee92a4d6a46ac2428737dd176b5"
+    }
+  ]
+}

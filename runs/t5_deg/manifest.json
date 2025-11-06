@@ -1,0 +1,53 @@
+{
+  "config": {
+    "sweeps": 160,
+    "burn_in": 20,
+    "thinning": 1,
+    "ladder": {
+      "replicas": 2,
+      "base_temperature": 1.0,
+      "policy": {
+        "type": "geometric",
+        "ratio": 1.4
+      }
+    },
+    "move_counts": {
+      "generator_flips": 0,
+      "row_ops": 0,
+      "graph_rewires": 0,
+      "worm_moves": 0
+    },
+    "checkpoint": {
+      "interval": 40,
+      "directory": "checkpoints",
+      "max_to_keep": 5
+    },
+    "scoring": {
+      "cmdl": 1.0,
+      "spec": 0.9,
+      "curv": 0.5
+    },
+    "seed_policy": {
+      "master_seed": 9002,
+      "label": "topo-deg-up"
+    },
+    "output": {
+      "run_directory": "runs/t5_deg/",
+      "metrics_file": "metrics.csv",
+      "manifest_file": "manifest.json",
+      "checkpoint_dir": "checkpoints",
+      "end_state_dir": "end_state"
+    }
+  },
+  "master_seed": 9002,
+  "seed_label": "topo-deg-up",
+  "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+  "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4",
+  "metrics_file": "metrics.csv",
+  "checkpoints": [
+    "checkpoints/ckpt_00040.json",
+    "checkpoints/ckpt_00080.json",
+    "checkpoints/ckpt_00120.json",
+    "checkpoints/ckpt_00160.json"
+  ]
+}
