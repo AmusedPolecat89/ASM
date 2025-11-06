@@ -1,0 +1,5427 @@
+{
+  "acceptance_rates": {
+    "generator-flip": 0.0
+  },
+  "replica_temperatures": [
+    1.0,
+    30.0
+  ],
+  "exchange_acceptance": [
+    1.0
+  ],
+  "coverage": {
+    "unique_state_hashes": 1,
+    "worm_samples": 0,
+    "mean_energy": 8.932814542449133,
+    "energy_variance": 0.0,
+    "average_jaccard": 1.0
+  },
+  "effective_sample_size": 180.0,
+  "final_code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+  "final_graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4",
+  "metrics_path": "runs/t3_noworm/metrics.csv",
+  "manifest_path": "runs/t3_noworm/manifest.json",
+  "checkpoints": [],
+  "samples": [
+    {
+      "sweep": 20,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 21,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 20,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 21,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 21,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 22,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 21,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 22,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 22,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 23,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 22,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 23,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 23,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 24,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 23,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 24,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 24,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 25,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 24,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 25,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 25,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 26,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 25,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 26,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 26,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 27,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 26,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 27,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 27,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 28,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 27,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 28,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 28,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 29,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 28,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 29,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 29,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 30,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 29,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 30,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 30,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 31,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 30,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 31,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 31,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 32,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 31,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 32,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 32,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 33,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 32,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 33,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 33,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 34,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 33,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 34,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 34,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 35,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 34,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 35,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 35,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 36,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 35,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 36,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 36,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 37,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 36,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 37,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 37,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 38,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 37,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 38,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 38,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 39,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 38,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 39,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 39,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 40,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 39,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 40,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 40,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 41,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 40,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 41,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 41,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 42,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 41,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 42,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 42,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 43,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 42,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 43,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 43,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 44,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 43,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 44,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 44,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 45,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 44,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 45,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 45,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 46,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 45,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 46,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 46,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 47,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 46,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 47,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 47,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 48,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 47,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 48,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 48,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 49,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 48,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 49,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 49,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 50,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 49,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 50,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 50,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 51,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 50,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 51,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 51,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 52,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 51,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 52,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 52,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 53,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 52,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 53,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 53,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 54,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 53,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 54,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 54,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 55,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 54,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 55,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 55,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 56,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 55,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 56,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 56,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 57,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 56,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 57,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 57,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 58,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 57,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 58,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 58,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 59,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 58,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 59,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 59,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 60,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 59,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 60,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 60,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 61,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 60,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 61,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 61,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 62,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 61,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 62,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 62,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 63,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 62,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 63,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 63,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 64,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 63,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 64,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 64,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 65,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 64,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 65,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 65,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 66,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 65,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 66,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 66,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 67,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 66,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 67,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 67,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 68,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 67,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 68,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 68,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 69,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 68,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 69,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 69,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 70,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 69,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 70,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 70,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 71,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 70,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 71,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 71,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 72,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 71,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 72,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 72,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 73,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 72,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 73,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 73,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 74,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 73,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 74,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 74,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 75,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 74,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 75,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 75,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 76,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 75,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 76,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 76,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 77,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 76,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 77,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 77,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 78,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 77,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 78,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 78,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 79,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 78,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 79,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 79,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 80,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 79,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 80,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 80,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 81,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 80,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 81,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 81,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 82,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 81,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 82,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 82,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 83,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 82,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 83,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 83,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 84,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 83,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 84,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 84,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 85,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 84,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 85,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 85,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 86,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 85,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 86,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 86,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 87,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 86,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 87,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 87,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 88,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 87,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 88,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 88,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 89,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 88,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 89,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 89,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 90,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 89,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 90,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 90,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 91,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 90,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 91,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 91,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 92,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 91,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 92,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 92,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 93,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 92,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 93,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 93,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 94,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 93,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 94,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 94,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 95,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 94,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 95,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 95,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 96,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 95,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 96,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 96,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 97,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 96,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 97,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 97,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 98,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 97,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 98,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 98,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 99,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 98,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 99,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 99,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 100,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 99,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 100,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 100,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 101,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 100,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 101,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 101,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 102,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 101,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 102,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 102,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 103,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 102,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 103,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 103,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 104,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 103,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 104,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 104,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 105,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 104,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 105,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 105,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 106,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 105,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 106,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 106,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 107,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 106,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 107,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 107,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 108,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 107,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 108,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 108,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 109,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 108,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 109,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 109,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 110,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 109,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 110,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 110,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 111,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 110,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 111,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 111,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 112,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 111,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 112,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 112,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 113,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 112,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 113,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 113,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 114,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 113,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 114,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 114,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 115,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 114,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 115,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 115,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 116,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 115,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 116,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 116,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 117,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 116,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 117,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 117,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 118,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 117,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 118,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 118,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 119,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 118,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 119,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 119,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 120,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 119,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 120,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 120,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 121,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 120,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 121,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 121,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 122,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 121,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 122,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 122,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 123,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 122,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 123,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 123,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 124,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 123,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 124,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 124,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 125,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 124,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 125,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 125,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 126,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 125,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 126,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 126,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 127,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 126,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 127,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 127,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 128,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 127,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 128,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 128,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 129,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 128,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 129,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 129,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 130,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 129,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 130,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 130,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 131,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 130,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 131,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 131,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 132,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 131,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 132,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 132,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 133,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 132,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 133,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 133,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 134,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 133,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 134,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 134,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 135,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 134,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 135,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 135,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 136,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 135,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 136,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 136,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 137,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 136,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 137,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 137,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 138,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 137,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 138,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 138,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 139,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 138,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 139,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 139,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 140,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 139,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 140,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 140,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 141,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 140,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 141,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 141,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 142,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 141,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 142,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 142,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 143,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 142,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 143,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 143,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 144,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 143,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 144,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 144,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 145,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 144,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 145,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 145,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 146,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 145,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 146,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 146,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 147,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 146,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 147,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 147,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 148,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 147,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 148,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 148,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 149,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 148,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 149,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 149,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 150,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 149,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 150,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 150,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 151,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 150,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 151,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 151,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 152,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 151,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 152,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 152,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 153,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 152,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 153,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 153,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 154,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 153,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 154,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 154,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 155,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 154,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 155,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 155,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 156,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 155,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 156,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 156,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 157,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 156,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 157,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 157,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 158,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 157,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 158,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 158,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 159,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 158,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 159,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 159,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 160,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 159,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 160,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 160,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 161,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 160,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 161,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 161,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 162,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 161,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 162,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 162,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 163,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 162,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 163,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 163,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 164,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 163,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 164,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 164,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 165,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 164,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 165,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 165,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 166,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 165,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 166,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 166,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 167,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 166,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 167,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 167,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 168,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 167,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 168,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 168,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 169,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 168,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 169,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 169,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 170,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 169,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 170,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 170,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 171,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 170,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 171,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 171,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 172,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 171,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 172,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 172,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 173,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 172,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 173,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 173,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 174,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 173,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 174,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 174,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 175,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 174,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 175,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 175,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 176,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 175,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 176,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 176,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 177,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 176,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 177,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 177,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 178,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 177,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 178,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 178,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 179,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 178,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 179,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 179,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 180,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 179,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 180,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 180,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 181,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 180,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 181,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 181,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 182,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 181,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 182,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 182,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 183,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 182,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 183,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 183,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 184,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 183,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 184,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 184,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 185,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 184,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 185,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 185,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 186,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 185,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 186,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 186,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 187,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 186,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 187,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 187,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 188,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 187,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 188,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 188,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 189,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 188,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 189,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 189,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 190,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 189,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 190,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 190,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 191,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 190,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 191,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 191,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 192,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 191,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 192,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 192,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 193,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 192,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 193,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 193,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 194,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 193,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 194,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 194,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 195,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 194,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 195,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 195,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 196,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 195,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 196,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 196,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 197,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 196,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 197,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 197,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 198,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 197,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 198,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 198,
+      "replica": 0,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 199,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 198,
+      "replica": 1,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 199,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 199,
+      "replica": 0,
+      "temperature": 1.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 200,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    },
+    {
+      "sweep": 199,
+      "replica": 1,
+      "temperature": 30.0,
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.014746219052619025,
+        "total": 8.93281454244909
+      },
+      "accepted_moves": 0,
+      "proposed_moves": 200,
+      "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+      "graph_hash": "b9ea046f264d660345bf8ad5c51f93259d55d7b8a5d7b3fd5bb07a0b77fdade4"
+    }
+  ]
+}

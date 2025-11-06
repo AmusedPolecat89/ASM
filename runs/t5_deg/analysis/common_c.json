@@ -1,0 +1,28 @@
+{
+  "common_c": 6.8,
+  "diagnostics": {
+    "confidence": 0.970873786407767,
+    "fit_error": 0.0,
+    "samples": 24
+  },
+  "residual_max": 0.0,
+  "residuals": [
+    {
+      "residual": 0.0,
+      "species": 2434658826906173145
+    },
+    {
+      "residual": 0.0,
+      "species": 3732977630546901011
+    },
+    {
+      "residual": 0.0,
+      "species": 8555028207594934870
+    },
+    {
+      "residual": 0.0,
+      "species": 13877155557347014298
+    }
+  ],
+  "tolerance": 0.03
+}

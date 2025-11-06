@@ -1,0 +1,16 @@
+[package]
+name = "asm-core"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0 OR MIT"
+description = "Core traits and types for the ASM engine"
+authors = ["ASM Contributors"]
+
+[dependencies]
+serde = { workspace = true }
+rand = { workspace = true, features = ["std"] }
+thiserror = { workspace = true }
+siphasher = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }

@@ -1,0 +1,79 @@
+{
+  "sweep": 240,
+  "config": {
+    "sweeps": 240,
+    "burn_in": 30,
+    "thinning": 1,
+    "ladder": {
+      "replicas": 3,
+      "base_temperature": 1.0,
+      "policy": {
+        "type": "geometric",
+        "ratio": 1.4
+      }
+    },
+    "move_counts": {
+      "generator_flips": 3,
+      "row_ops": 2,
+      "graph_rewires": 3,
+      "worm_moves": 2
+    },
+    "checkpoint": {
+      "interval": 60,
+      "directory": "checkpoints",
+      "max_to_keep": 6
+    },
+    "scoring": {
+      "cmdl": 1.0,
+      "spec": 0.8,
+      "curv": 0.4
+    },
+    "seed_policy": {
+      "master_seed": 6060,
+      "label": "e2e"
+    },
+    "output": {
+      "run_directory": "runs/t7/",
+      "metrics_file": "metrics.csv",
+      "manifest_file": "manifest.json",
+      "checkpoint_dir": "checkpoints",
+      "end_state_dir": "end_state"
+    }
+  },
+  "master_seed": 6060,
+  "replicas": [
+    {
+      "temperature": 1.0,
+      "code_json": "{\n  \"schema_version\": {\n    \"major\": 1,\n    \"minor\": 0,\n    \"patch\": 0\n  },\n  \"provenance\": {\n    \"input_hash\": \"seed-state\",\n    \"graph_hash\": \"\",\n    \"code_hash\": \"e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110\",\n    \"seed\": 42,\n    \"created_at\": \"2025-01-01T00:00:00Z\",\n    \"tool_versions\": {}\n  },\n  \"num_variables\": 4,\n  \"x_checks\": [\n    [\n      0,\n      1\n    ],\n    [\n      2,\n      3\n    ]\n  ],\n  \"z_checks\": [\n    [\n      0,\n      1\n    ],\n    [\n      2,\n      3\n    ]\n  ],\n  \"rank_x\": 2,\n  \"rank_z\": 2\n}",
+      "graph_json": "{\n  \"config\": {\n    \"causal_mode\": true,\n    \"max_in_degree\": 4,\n    \"max_out_degree\": 4,\n    \"k_uniform\": {\n      \"Balanced\": {\n        \"sources\": 2,\n        \"destinations\": 2\n      }\n    },\n    \"schema_version\": {\n      \"major\": 2,\n      \"minor\": 0,\n      \"patch\": 0\n    }\n  },\n  \"nodes\": [\n    true,\n    true,\n    true,\n    true,\n    true,\n    true\n  ],\n  \"edges\": [\n    {\n      \"alive\": true,\n      \"sources\": [\n        0,\n        1\n      ],\n      \"destinations\": [\n        4,\n        5\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        1,\n        2\n      ],\n      \"destinations\": [\n        0,\n        4\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        2,\n        3\n      ],\n      \"destinations\": [\n        1,\n        4\n      ]\n    }\n  ]\n}",
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.003686555200071398,
+        "total": 8.928390676908071
+      }
+    },
+    {
+      "temperature": 1.4,
+      "code_json": "{\n  \"schema_version\": {\n    \"major\": 1,\n    \"minor\": 0,\n    \"patch\": 0\n  },\n  \"provenance\": {\n    \"input_hash\": \"seed-state\",\n    \"graph_hash\": \"\",\n    \"code_hash\": \"e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110\",\n    \"seed\": 42,\n    \"created_at\": \"2025-01-01T00:00:00Z\",\n    \"tool_versions\": {}\n  },\n  \"num_variables\": 4,\n  \"x_checks\": [\n    [\n      0,\n      1\n    ],\n    [\n      2,\n      3\n    ]\n  ],\n  \"z_checks\": [\n    [\n      0,\n      1\n    ],\n    [\n      2,\n      3\n    ]\n  ],\n  \"rank_x\": 2,\n  \"rank_z\": 2\n}",
+      "graph_json": "{\n  \"config\": {\n    \"causal_mode\": true,\n    \"max_in_degree\": 4,\n    \"max_out_degree\": 4,\n    \"k_uniform\": {\n      \"Balanced\": {\n        \"sources\": 2,\n        \"destinations\": 2\n      }\n    },\n    \"schema_version\": {\n      \"major\": 2,\n      \"minor\": 0,\n      \"patch\": 0\n    }\n  },\n  \"nodes\": [\n    true,\n    true,\n    true,\n    true,\n    true,\n    true\n  ],\n  \"edges\": [\n    {\n      \"alive\": true,\n      \"sources\": [\n        0,\n        1\n      ],\n      \"destinations\": [\n        4,\n        5\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        1,\n        2\n      ],\n      \"destinations\": [\n        0,\n        3\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        2,\n        3\n      ],\n      \"destinations\": [\n        4,\n        5\n      ]\n    }\n  ]\n}",
+      "energy": {
+        "cmdl": 8.282174095733918,
+        "spec": 0.8059274488676564,
+        "curv": 0.0038580245073931013,
+        "total": 8.928459264631
+      }
+    },
+    {
+      "temperature": 1.9599999999999997,
+      "code_json": "{\n  \"schema_version\": {\n    \"major\": 1,\n    \"minor\": 0,\n    \"patch\": 0\n  },\n  \"provenance\": {\n    \"input_hash\": \"seed-state\",\n    \"graph_hash\": \"\",\n    \"code_hash\": \"dd8aaa740719d6cc4ac66daf2123a7934a987a11dc3d239411688084c4b1dd05\",\n    \"seed\": 42,\n    \"created_at\": \"2025-01-01T00:00:00Z\",\n    \"tool_versions\": {}\n  },\n  \"num_variables\": 4,\n  \"x_checks\": [\n    [\n      0,\n      1,\n      2,\n      3\n    ],\n    [\n      2,\n      3\n    ]\n  ],\n  \"z_checks\": [\n    [\n      0,\n      1,\n      2,\n      3\n    ],\n    [\n      2,\n      3\n    ]\n  ],\n  \"rank_x\": 2,\n  \"rank_z\": 2\n}",
+      "graph_json": "{\n  \"config\": {\n    \"causal_mode\": true,\n    \"max_in_degree\": 4,\n    \"max_out_degree\": 4,\n    \"k_uniform\": {\n      \"Balanced\": {\n        \"sources\": 2,\n        \"destinations\": 2\n      }\n    },\n    \"schema_version\": {\n      \"major\": 2,\n      \"minor\": 0,\n      \"patch\": 0\n    }\n  },\n  \"nodes\": [\n    true,\n    true,\n    true,\n    true,\n    true,\n    true\n  ],\n  \"edges\": [\n    {\n      \"alive\": true,\n      \"sources\": [\n        0,\n        1\n      ],\n      \"destinations\": [\n        4,\n        5\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        1,\n        2\n      ],\n      \"destinations\": [\n        0,\n        4\n      ]\n    },\n    {\n      \"alive\": true,\n      \"sources\": [\n        2,\n        3\n      ],\n      \"destinations\": [\n        1,\n        5\n      ]\n    }\n  ]\n}",
+      "energy": {
+        "cmdl": 9.628747686013892,
+        "spec": 1.994052230060813,
+        "curv": 0.004715361293860368,
+        "total": 11.225875614580085
+      }
+    }
+  ]
+}

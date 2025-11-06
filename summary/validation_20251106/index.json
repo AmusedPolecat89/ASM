@@ -1,0 +1,50 @@
+{
+  "t1_seed0": {
+    "metric": 53.0,
+    "status": "PASS"
+  },
+  "t1_seed1": {
+    "metric": 97.0,
+    "status": "PASS"
+  },
+  "t2_a": {
+    "metric": 66.0,
+    "status": "PASS"
+  },
+  "t2_b": {
+    "metric": 66.0,
+    "status": "PASS"
+  },
+  "t3_noworm": {
+    "metric": 1.0,
+    "status": "PASS"
+  },
+  "t3_worm": {
+    "metric": 147.0,
+    "status": "PASS"
+  },
+  "t4": {
+    "metric": 1.0,
+    "status": "PASS"
+  },
+  "t5_base": {
+    "metric": 1.0,
+    "status": "PASS"
+  },
+  "t5_deg": {
+    "metric": 1.0,
+    "status": "PASS"
+  },
+  "t5_k": {
+    "metric": 1.0,
+    "status": "PASS"
+  },
+  "t6": {
+    "metric": null,
+    "status": "MISSING"
+  },
+  "t7": {
+    "metric": 163.0,
+    "status": "PASS"
+  }
+}

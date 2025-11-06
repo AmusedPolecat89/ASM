@@ -1,0 +1,30 @@
+[package]
+name = "asm-graph"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+asm-core = { path = "../asm-core" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+rand = { workspace = true }
+thiserror = { workspace = true }
+sha2 = { workspace = true }
+bincode = { workspace = true }
+
+[dev-dependencies]
+proptest = { workspace = true }
+criterion = { workspace = true }
+
+[[bench]]
+name = "build_graph"
+harness = false
+
+[[bench]]
+name = "queries"
+harness = false
+
+[[bench]]
+name = "curvature"
+harness = false
