@@ -1,0 +1,141 @@
+{
+  "artifacts": [],
+  "jobs": [
+    {
+      "metrics": {
+        "kpis": {
+          "covariance_pass": {
+            "pass": true,
+            "value": 0.8736010653628765
+          },
+          "delta_c_kin_norm": {
+            "pass": true,
+            "value": 0.02195692480415165
+          },
+          "max_delta_g": {
+            "pass": true,
+            "value": 0.018832340519376215
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "dict.opts.variant": "A",
+        "rg.scale": 2,
+        "rg.steps": 1,
+        "sampler.sweeps": 32,
+        "sampler.worm_weight": 0.15
+      },
+      "seed": 7640891576956021282
+    },
+    {
+      "metrics": {
+        "kpis": {
+          "covariance_pass": {
+            "pass": true,
+            "value": 0.7108812776448499
+          },
+          "delta_c_kin_norm": {
+            "pass": true,
+            "value": 0.02386054810279779
+          },
+          "max_delta_g": {
+            "pass": true,
+            "value": 0.02839836690049498
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "dict.opts.variant": "A",
+        "rg.scale": 2,
+        "rg.steps": 2,
+        "sampler.sweeps": 32,
+        "sampler.worm_weight": 0.15
+      },
+      "seed": 15281783153912033594
+    },
+    {
+      "metrics": {
+        "kpis": {
+          "covariance_pass": {
+            "pass": true,
+            "value": 0.08273404296149516
+          },
+          "delta_c_kin_norm": {
+            "pass": true,
+            "value": 0.039107365153165465
+          },
+          "max_delta_g": {
+            "pass": true,
+            "value": 0.008613473501319366
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "dict.opts.variant": "B",
+        "rg.scale": 2,
+        "rg.steps": 1,
+        "sampler.sweeps": 32,
+        "sampler.worm_weight": 0.15
+      },
+      "seed": 4475930657158494258
+    },
+    {
+      "metrics": {
+        "kpis": {
+          "covariance_pass": {
+            "pass": true,
+            "value": 0.8323764269541644
+          },
+          "delta_c_kin_norm": {
+            "pass": true,
+            "value": 0.012190642569344169
+          },
+          "max_delta_g": {
+            "pass": true,
+            "value": 0.006242929655647227
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "dict.opts.variant": "B",
+        "rg.scale": 2,
+        "rg.steps": 2,
+        "sampler.sweeps": 32,
+        "sampler.worm_weight": 0.15
+      },
+      "seed": 12116822234114492170
+    }
+  ],
+  "plan_hash": "8ea17e6251131f868899d52c859eb56e4dfa60bcbd6e9c6d5fc0172975f7df0a",
+  "plan_name": "rg_vs_couplings",
+  "summary": {
+    "jobs": 4,
+    "kpis": {
+      "covariance_pass": {
+        "all_pass": true,
+        "mean": 0.6248982032308464,
+        "pass_rate": 1.0
+      },
+      "delta_c_kin_norm": {
+        "all_pass": true,
+        "mean": 0.02427887015736477,
+        "pass_rate": 1.0
+      },
+      "max_delta_g": {
+        "all_pass": true,
+        "mean": 0.015521777644209445,
+        "pass_rate": 1.0
+      }
+    },
+    "plan": "rg_vs_couplings",
+    "provenance": {
+      "commit": "unknown",
+      "created_at": "1970-01-01T00:00:00Z",
+      "seed": 9002
+    }
+  }
+}

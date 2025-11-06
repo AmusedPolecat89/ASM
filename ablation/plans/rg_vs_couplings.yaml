@@ -1,0 +1,23 @@
+name: rg_vs_couplings
+mode: grid
+factors:
+  rg.scale: [2]
+  rg.steps: [1, 2]
+  dict.opts.variant: ["A", "B"]
+fixed:
+  sampler.sweeps: 32
+  sampler.worm_weight: 0.15
+tolerances:
+  covariance_pass:
+    min: 0.0
+    max: 1.0
+    abs: 1e-6
+    rel: 1e-3
+  delta_c_kin_norm:
+    max: 0.05
+    abs: 1e-6
+    rel: 1e-3
+  max_delta_g:
+    max: 0.05
+    abs: 1e-6
+    rel: 1e-3

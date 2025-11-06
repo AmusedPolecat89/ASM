@@ -1,0 +1,30 @@
+sweeps: 48
+burn_in: 0
+thinning: 1
+ladder:
+  replicas: 1
+  base_temperature: 1.0
+  policy:
+    type: geometric
+    ratio: 1.0
+move_counts:
+  generator_flips: 1
+  row_ops: 1
+  graph_rewires: 1
+  worm_moves: 1
+checkpoint:
+  interval: 16
+  directory: checkpoints
+  max_to_keep: 2
+scoring:
+  cmdl: 1.0
+  spec: 1.0
+  curv: 1.0
+seed_policy:
+  master_seed: 1337
+  label: "replication-determinism"
+output:
+  metrics_file: metrics.csv
+  manifest_file: manifest.json
+  checkpoint_dir: checkpoints
+  end_state_dir: end_state

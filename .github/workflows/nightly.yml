@@ -1,0 +1,64 @@
+name: Nightly Ablations
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  nightly:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: 1.75.0
+          components: rustfmt, clippy
+          override: true
+
+      - name: Cargo fmt
+        run: cargo fmt --all -- --check
+
+      - name: Cargo clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+
+      - name: Cargo test
+        run: cargo test
+
+      - name: Cargo doc tests
+        run: cargo test --doc
+
+      - name: Size guard
+        run: |
+          set -euo pipefail
+          LARGE_FILES=$(find . -type f -size +5M \
+            ! -path './.git/*' \
+            ! -path './target/*')
+          if [[ -n "$LARGE_FILES" ]]; then
+            echo "Files larger than 5 MB detected:" >&2
+            echo "$LARGE_FILES" >&2
+            exit 1
+          fi
+
+      - name: Run ablation suite
+        run: |
+          set -euo pipefail
+          scripts/run_ablation.sh ablation/plans/topo_vs_worm.yaml --seed 9101
+          scripts/run_ablation.sh ablation/plans/rg_vs_couplings.yaml --seed 9102
+          scripts/run_ablation.sh ablation/plans/seeds_landscape.yaml --seed 9103
+
+      - name: Summarize registry
+        run: python3 scripts/summarize_registry.py --registry registry/asm.sqlite --out dashboards
+
+      - name: Upload nightly artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: nightly-ablation-reports
+          path: |
+            ablation/out
+            registry/asm.sqlite
+            dashboards
+          if-no-files-found: warn

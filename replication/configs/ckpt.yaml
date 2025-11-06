@@ -1,0 +1,30 @@
+sweeps: 72
+burn_in: 12
+thinning: 1
+ladder:
+  replicas: 1
+  base_temperature: 1.0
+  policy:
+    type: geometric
+    ratio: 1.0
+move_counts:
+  generator_flips: 2
+  row_ops: 2
+  graph_rewires: 2
+  worm_moves: 1
+checkpoint:
+  interval: 24
+  directory: checkpoints
+  max_to_keep: 2
+scoring:
+  cmdl: 0.9
+  spec: 0.9
+  curv: 0.2
+seed_policy:
+  master_seed: 2048
+  label: "replication-ckpt"
+output:
+  metrics_file: metrics.csv
+  manifest_file: manifest.json
+  checkpoint_dir: checkpoints
+  end_state_dir: end_state

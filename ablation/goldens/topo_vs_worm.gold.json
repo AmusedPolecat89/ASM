@@ -1,0 +1,137 @@
+{
+  "artifacts": [],
+  "jobs": [
+    {
+      "metrics": {
+        "kpis": {
+          "common_c_residual": {
+            "pass": true,
+            "value": 0.013646279790519267
+          },
+          "exchange_acceptance": {
+            "pass": true,
+            "value": 0.21311777622911948
+          },
+          "unique_structural_hashes": {
+            "pass": true,
+            "value": 0.9056455076932401
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "graph.degree_cap": 3,
+        "graph.rewire_rate": 0.1,
+        "moves.worm_weight": 0.0,
+        "sampler.sweeps": 48
+      },
+      "seed": 7640891576956021281
+    },
+    {
+      "metrics": {
+        "kpis": {
+          "common_c_residual": {
+            "pass": true,
+            "value": 0.00211275876539843
+          },
+          "exchange_acceptance": {
+            "pass": true,
+            "value": 0.2540868998323198
+          },
+          "unique_structural_hashes": {
+            "pass": true,
+            "value": 0.6238964761490899
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "graph.degree_cap": 3,
+        "graph.rewire_rate": 0.1,
+        "moves.worm_weight": 0.3,
+        "sampler.sweeps": 48
+      },
+      "seed": 15281783153912033593
+    },
+    {
+      "metrics": {
+        "kpis": {
+          "common_c_residual": {
+            "pass": true,
+            "value": 0.002954255239904116
+          },
+          "exchange_acceptance": {
+            "pass": true,
+            "value": 0.3288450470339105
+          },
+          "unique_structural_hashes": {
+            "pass": true,
+            "value": 0.13755712277994278
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "graph.degree_cap": 4,
+        "graph.rewire_rate": 0.1,
+        "moves.worm_weight": 0.0,
+        "sampler.sweeps": 48
+      },
+      "seed": 4475930657158494257
+    },
+    {
+      "metrics": {
+        "kpis": {
+          "common_c_residual": {
+            "pass": true,
+            "value": 0.026476437314147498
+          },
+          "exchange_acceptance": {
+            "pass": true,
+            "value": 0.31646539051855244
+          },
+          "unique_structural_hashes": {
+            "pass": true,
+            "value": 0.03427208989045244
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "graph.degree_cap": 4,
+        "graph.rewire_rate": 0.1,
+        "moves.worm_weight": 0.3,
+        "sampler.sweeps": 48
+      },
+      "seed": 12116822234114492169
+    }
+  ],
+  "plan_hash": "7f8c82282756971d8347bb22075d2dfbf47d247783a933d086a1c5caffe32408",
+  "plan_name": "topo_vs_worm",
+  "summary": {
+    "jobs": 4,
+    "kpis": {
+      "common_c_residual": {
+        "all_pass": true,
+        "mean": 0.011297432777492327,
+        "pass_rate": 1.0
+      },
+      "exchange_acceptance": {
+        "all_pass": true,
+        "mean": 0.27812877840347555,
+        "pass_rate": 1.0
+      },
+      "unique_structural_hashes": {
+        "all_pass": true,
+        "mean": 0.42534279912818135,
+        "pass_rate": 1.0
+      }
+    },
+    "plan": "topo_vs_worm",
+    "provenance": {
+      "commit": "unknown",
+      "created_at": "1970-01-01T00:00:00Z",
+      "seed": 9001
+    }
+  }
+}

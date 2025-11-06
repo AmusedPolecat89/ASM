@@ -1,0 +1,14 @@
+# Rg Covariance
+
+| Metric | Value |
+| --- | --- |
+| c_kin | 0.7500 |
+| ci | {"c_kin": 0.037500000000000006, "g": [0.025, 0.014142135623730954, 0.010000000000000002], "lambda_h": 0.05, "yukawa": [0.027500000000000004, 0.0625, 0.10178571428571431]} |
+| dict_hash | "44d0f7743d53843b5267ad8a9d0419df766dd01abbf4c3f381aa5f5e8eaed305" |
+| fit_residuals | 0.0000 |
+| g | [0.5, 0.28284271247461906, 0.2] |
+| lambda_h | 1.0000 |
+| provenance | {"notes": "deterministic synthetic dictionary (yukawa_count=3, tol=1.000e-6)", "seed": 7} |
+| yukawa | [0.55, 1.25, 2.035714285714286] |
+
+Coupling deltas recorded during the single-step RG run.

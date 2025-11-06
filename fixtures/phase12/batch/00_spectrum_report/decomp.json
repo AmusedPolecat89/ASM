@@ -1,0 +1,1 @@
+{"factors":[{"dim":3,"invariants":{"frobenius":1.032818819,"symmetry":0.0,"trace":1e-9},"rank":3,"type":"su2"},{"dim":3,"invariants":{"frobenius":1.084213561,"symmetry":0.0,"trace":0.197417113},"rank":3,"type":"u1"},{"dim":3,"invariants":{"frobenius":0.645538746,"symmetry":0.0,"trace":-1e-9},"rank":3,"type":"su2"}],"residual_norm":0.197416113}

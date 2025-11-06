@@ -1,3 +1,16 @@
+pub mod ablation;
+pub mod deform;
+pub mod demo;
+pub mod doctor;
 pub mod extract;
+pub mod gaps;
+pub mod gauge;
+pub mod gauge_batch;
+pub mod gauge_compare;
+pub mod report;
 pub mod rg;
 pub mod rg_covariance;
+pub mod spectrum;
+pub mod spectrum_batch;
+pub mod sweep;
+pub mod version;

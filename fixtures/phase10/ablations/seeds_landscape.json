@@ -1,0 +1,7 @@
+{
+  "plan_name": "seeds_landscape",
+  "kpis": {
+    "unique_vacua": [3, 4, 3, 5, 4],
+    "energy_spread": [0.02, 0.018, 0.021, 0.019, 0.02]
+  }
+}

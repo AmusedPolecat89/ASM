@@ -19,9 +19,22 @@ use asm_mcmc::manifest::RunManifest;
 use asm_mcmc::{run, RunSummary};
 use clap::{Args as ClapArgs, Parser, Subcommand};
 use commands::{
+    ablation::{self, AblationArgs},
+    deform::{self, DeformArgs},
+    demo::{self, DemoArgs},
+    doctor::{self, DoctorArgs},
     extract::{self, ExtractArgs},
+    gaps::{self, GapsArgs},
+    gauge::{self, GaugeArgs},
+    gauge_batch::{self, GaugeBatchArgs},
+    gauge_compare::{self, GaugeCompareArgs},
+    report::{self, ReportArgs},
     rg::{self, RgArgs},
     rg_covariance::{self, RgCovarianceArgs},
+    spectrum::{self, SpectrumArgs},
+    spectrum_batch::{self, SpectrumBatchArgs},
+    sweep::{self, SweepArgs},
+    version::{self, VersionArgs},
 };
 use serde::Deserialize;
 use serde_json::json;
@@ -47,6 +60,32 @@ enum Command {
     Extract(ExtractArgs),
     /// Compare dictionary extraction before/after RG.
     RgCovariance(RgCovarianceArgs),
+    /// Apply deterministic deformations to a state snapshot.
+    Deform(DeformArgs),
+    /// Execute a multi-parameter sweep experiment.
+    Sweep(SweepArgs),
+    /// Estimate dispersion or spectral gaps for a state.
+    Gaps(GapsArgs),
+    /// Analyse gauge representations for a single state.
+    Gauge(GaugeArgs),
+    /// Analyse gauge representations for multiple spectra.
+    GaugeBatch(GaugeBatchArgs),
+    /// Compare two gauge reports and emit deterministic deltas.
+    GaugeCompare(GaugeCompareArgs),
+    /// Assemble a runbook and reporting bundle from experiment outputs.
+    Report(ReportArgs),
+    /// Execute a deterministic ablation plan and persist reports.
+    Ablation(AblationArgs),
+    /// Analyse a single state and emit deterministic spectrum artefacts.
+    Spectrum(SpectrumArgs),
+    /// Analyse many states and emit batched spectrum artefacts.
+    SpectrumBatch(SpectrumBatchArgs),
+    /// Verify repository health and replication prerequisites.
+    Doctor(DoctorArgs),
+    /// Run a minimal deterministic demo using the replication seeds.
+    Demo(DemoArgs),
+    /// Display release metadata and toolchain information.
+    Version(VersionArgs),
 }
 
 #[derive(ClapArgs, Debug)]
@@ -129,6 +168,19 @@ fn main() -> Result<(), Box<dyn Error>> {
         Command::Rg(args) => rg::run(&args),
         Command::Extract(args) => extract::run(&args),
         Command::RgCovariance(args) => rg_covariance::run(&args),
+        Command::Deform(args) => deform::run(&args),
+        Command::Sweep(args) => sweep::run(&args),
+        Command::Gaps(args) => gaps::run(&args),
+        Command::Gauge(args) => gauge::run(&args),
+        Command::GaugeBatch(args) => gauge_batch::run(&args),
+        Command::GaugeCompare(args) => gauge_compare::run(&args),
+        Command::Report(args) => report::run(&args),
+        Command::Ablation(args) => ablation::run(&args),
+        Command::Spectrum(args) => spectrum::run(&args),
+        Command::SpectrumBatch(args) => spectrum_batch::run(&args),
+        Command::Doctor(args) => doctor::run(&args),
+        Command::Demo(args) => demo::run(&args),
+        Command::Version(args) => version::run(&args),
     }
 }
 

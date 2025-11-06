@@ -1,0 +1,5 @@
+{
+  "gap_value": 0.12,
+  "ci": [0.1, 0.14],
+  "passes": true
+}
