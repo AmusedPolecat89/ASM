@@ -1,0 +1,7 @@
+{
+  "plan_name": "rg_vs_couplings",
+  "kpis": {
+    "delta_ckin_norm": [0.02, 0.018],
+    "max_delta_g": [0.03, 0.028]
+  }
+}

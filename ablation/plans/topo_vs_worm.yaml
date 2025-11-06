@@ -1,0 +1,22 @@
+name: topo_vs_worm
+mode: grid
+factors:
+  graph.degree_cap: [3, 4]
+  moves.worm_weight: [0.0, 0.3]
+fixed:
+  sampler.sweeps: 48
+  graph.rewire_rate: 0.1
+tolerances:
+  unique_structural_hashes:
+    min: 0.0
+    abs: 1e-9
+    rel: 1e-3
+  exchange_acceptance:
+    min: 0.2
+    max: 0.5
+    abs: 1e-6
+    rel: 1e-3
+  common_c_residual:
+    max: 0.03
+    abs: 1e-6
+    rel: 1e-3

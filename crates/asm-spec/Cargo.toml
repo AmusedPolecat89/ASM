@@ -1,0 +1,24 @@
+[package]
+name = "asm-spec"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Deterministic spectral analysis helpers for ASM states."
+
+[dependencies]
+asm-core = { path = "../asm-core" }
+asm-graph = { path = "../asm-graph" }
+asm-code = { path = "../asm-code" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
+rand = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+criterion = { workspace = true }
+
+[[bench]]
+name = "spectrum_throughput"
+harness = false

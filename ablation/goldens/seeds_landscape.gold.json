@@ -1,0 +1,158 @@
+{
+  "artifacts": [],
+  "jobs": [
+    {
+      "metrics": {
+        "kpis": {
+          "c_distribution_spread": {
+            "pass": true,
+            "value": 0.08582770961951568
+          },
+          "energy_spread": {
+            "pass": true,
+            "value": 0.012471021355441415
+          },
+          "unique_vacua": {
+            "pass": true,
+            "value": 0.7313173233551272
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "graph.degree_cap": 3,
+        "sampler.seed": 10,
+        "sampler.sweeps": 16
+      },
+      "seed": 7640891576956021283
+    },
+    {
+      "metrics": {
+        "kpis": {
+          "c_distribution_spread": {
+            "pass": true,
+            "value": 0.017059272858872956
+          },
+          "energy_spread": {
+            "pass": true,
+            "value": 0.1428316287888618
+          },
+          "unique_vacua": {
+            "pass": true,
+            "value": 0.09511084355402666
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "graph.degree_cap": 3,
+        "sampler.seed": 11,
+        "sampler.sweeps": 16
+      },
+      "seed": 15281783153912033595
+    },
+    {
+      "metrics": {
+        "kpis": {
+          "c_distribution_spread": {
+            "pass": true,
+            "value": 0.06495052364611535
+          },
+          "energy_spread": {
+            "pass": true,
+            "value": 0.0330441737892202
+          },
+          "unique_vacua": {
+            "pass": true,
+            "value": 0.8370365111126614
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "graph.degree_cap": 3,
+        "sampler.seed": 12,
+        "sampler.sweeps": 16
+      },
+      "seed": 4475930657158494259
+    },
+    {
+      "metrics": {
+        "kpis": {
+          "c_distribution_spread": {
+            "pass": true,
+            "value": 0.003052806123130082
+          },
+          "energy_spread": {
+            "pass": true,
+            "value": 0.17154139512181463
+          },
+          "unique_vacua": {
+            "pass": true,
+            "value": 0.343684587437745
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "graph.degree_cap": 3,
+        "sampler.seed": 13,
+        "sampler.sweeps": 16
+      },
+      "seed": 12116822234114492171
+    },
+    {
+      "metrics": {
+        "kpis": {
+          "c_distribution_spread": {
+            "pass": true,
+            "value": 0.019337335500485442
+          },
+          "energy_spread": {
+            "pass": true,
+            "value": 0.1275253563040361
+          },
+          "unique_vacua": {
+            "pass": true,
+            "value": 0.4735931230427395
+          }
+        },
+        "status": "completed"
+      },
+      "params": {
+        "graph.degree_cap": 3,
+        "sampler.seed": 14,
+        "sampler.sweeps": 16
+      },
+      "seed": 1310969737360952835
+    }
+  ],
+  "plan_hash": "1af0f8ded4973163e34649e37dd4cf921cd32e290f84da768229e13cbd32bf11",
+  "plan_name": "seeds_landscape",
+  "summary": {
+    "jobs": 5,
+    "kpis": {
+      "c_distribution_spread": {
+        "all_pass": true,
+        "mean": 0.038045529549623903,
+        "pass_rate": 1.0
+      },
+      "energy_spread": {
+        "all_pass": true,
+        "mean": 0.09748271507187484,
+        "pass_rate": 1.0
+      },
+      "unique_vacua": {
+        "all_pass": true,
+        "mean": 0.49614847770046,
+        "pass_rate": 1.0
+      }
+    },
+    "plan": "seeds_landscape",
+    "provenance": {
+      "commit": "unknown",
+      "created_at": "1970-01-01T00:00:00Z",
+      "seed": 9003
+    }
+  }
+}

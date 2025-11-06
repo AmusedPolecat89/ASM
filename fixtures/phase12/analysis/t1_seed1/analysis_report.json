@@ -1,0 +1,32 @@
+{
+  "graph_aut": {
+    "order": 5,
+    "gens_truncated": false,
+    "orbit_hist": [1, 2, 2]
+  },
+  "code_aut": {
+    "order": 2,
+    "gens_truncated": false,
+    "css_preserving": true
+  },
+  "logical": {
+    "rank_x": 1,
+    "rank_z": 2,
+    "comm_signature": "logical:3|labels:b|meta:sample=demo"
+  },
+  "spectral": {
+    "laplacian_topk": [1.8, 0.9],
+    "stabilizer_topk": [1.2, 0.4]
+  },
+  "hashes": {
+    "analysis_hash": "8e04b01c2ef5b6ad447fae9920e2ba44",
+    "graph_hash": "c9823d0b3e92bc84f99c8b93f865c94818af1eb7996c75bb6f4abe9c6238fc04",
+    "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110"
+  },
+  "provenance": {
+    "seed": 7102,
+    "run_id": "t1_seed1",
+    "checkpoint_id": null,
+    "commit": "phase12-demo"
+  }
+}

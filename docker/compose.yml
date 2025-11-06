@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  replication:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    working_dir: /work
+    command: ["bash", "replication/run.sh"]
+    volumes:
+      - ..:/work

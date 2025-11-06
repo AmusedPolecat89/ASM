@@ -1,0 +1,7 @@
+/target/
+replication/out/
+ablation/out/
+dashboards/generated/
+
+# Registry artifacts
+registry/*.sqlite

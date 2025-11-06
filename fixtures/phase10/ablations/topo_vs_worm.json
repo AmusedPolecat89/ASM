@@ -1,0 +1,7 @@
+{
+  "plan_name": "topo_vs_worm",
+  "kpis": {
+    "exchange_acceptance": [0.32, 0.35, 0.33, 0.31],
+    "common_c_residual": [0.01, 0.012, 0.011, 0.013]
+  }
+}

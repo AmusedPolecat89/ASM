@@ -1,0 +1,20 @@
+name: seeds_landscape
+mode: grid
+factors:
+  sampler.seed: [10, 11, 12, 13, 14]
+fixed:
+  sampler.sweeps: 16
+  graph.degree_cap: 3
+tolerances:
+  unique_vacua:
+    min: 0.0
+    abs: 1e-9
+    rel: 1e-3
+  c_distribution_spread:
+    max: 0.10
+    abs: 1e-6
+    rel: 1e-3
+  energy_spread:
+    max: 0.20
+    abs: 1e-6
+    rel: 1e-3

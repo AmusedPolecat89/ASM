@@ -7,6 +7,9 @@ members = [
     "crates/asm-mcmc",
     "crates/asm-sim",
     "crates/asm-rg",
+    "crates/asm-exp",
+    "crates/asm-spec",
+    "crates/asm-gauge",
 ]
 resolver = "2"
 
@@ -23,3 +26,4 @@ bincode = "1.3"
 proptest = "1.4"
 criterion = { version = "0.5", default-features = false, features = ["html_reports"] }
 siphasher = "0.3"
+tempfile = "3.10"

@@ -1,0 +1,5 @@
+date,commit,plan_name,plan_hash,job_id,params,metrics
+2024-05-01T00:00:00Z,abc123,topo_vs_worm,h1,0,"{}","{\"exchange_acceptance\": 0.33, \"common_c_residual\": 0.012}"
+2024-05-01T00:00:00Z,abc123,topo_vs_worm,h1,1,"{}","{\"exchange_acceptance\": 0.31, \"common_c_residual\": 0.011}"
+2024-05-02T00:00:00Z,def456,rg_vs_couplings,h2,0,"{}","{\"delta_ckin_norm\": 0.02, \"max_delta_g\": 0.028}"
+2024-05-02T00:00:00Z,def456,seeds_landscape,h3,0,"{}","{\"unique_vacua\": 4, \"energy_spread\": 0.02}"

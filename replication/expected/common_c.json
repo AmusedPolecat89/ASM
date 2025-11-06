@@ -1,0 +1,58 @@
+{
+  "run_seed0": {
+    "common_c": 7.5,
+    "diagnostics": {
+      "confidence": 0.970873786407767,
+      "fit_error": 27.0,
+      "samples": 24
+    },
+    "residual_max": 4.5,
+    "residuals": [
+      {
+        "residual": -1.5,
+        "species": 2434658826906173145
+      },
+      {
+        "residual": -1.5,
+        "species": 3732977630546901011
+      },
+      {
+        "residual": -1.5,
+        "species": 8555028207594934870
+      },
+      {
+        "residual": 4.5,
+        "species": 13877155557347014298
+      }
+    ],
+    "tolerance": 0.03
+  },
+  "run_seed1": {
+    "common_c": 8.5,
+    "diagnostics": {
+      "confidence": 0.970873786407767,
+      "fit_error": 34.68,
+      "samples": 24
+    },
+    "residual_max": 5.1,
+    "residuals": [
+      {
+        "residual": -1.7000000000000002,
+        "species": 2434658826906173145
+      },
+      {
+        "residual": -1.7000000000000002,
+        "species": 3732977630546901011
+      },
+      {
+        "residual": -1.7000000000000002,
+        "species": 8555028207594934870
+      },
+      {
+        "residual": 5.1,
+        "species": 13877155557347014298
+      }
+    ],
+    "tolerance": 0.03
+  }
+}
