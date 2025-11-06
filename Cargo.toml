@@ -3,8 +3,10 @@ members = [
     "crates/asm-core",
     "crates/asm-graph",
     "crates/asm-code",
+    "crates/asm-aut",
     "crates/asm-mcmc",
     "crates/asm-sim",
+    "crates/asm-rg",
 ]
 resolver = "2"
 

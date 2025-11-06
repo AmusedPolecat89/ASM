@@ -6,6 +6,8 @@ Core workspace for the ASM engine prototypes.
 * [Phase 2 Graph API](crates/asm-graph/docs/phase2-graph-api.md)
 * [Phase 3 Code API](crates/asm-code/docs/phase3-code-api.md)
 * [Phase 4 Ensemble API](crates/asm-mcmc/docs/phase4-ensemble-api.md)
+* [Phase 5 Automorphisms API](docs/phase5-aut-api.md)
+* [Phase 6 RG API](docs/phase6-rg-api.md)
 
 ## CLI utilities
 
