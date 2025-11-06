@@ -1,0 +1,38 @@
+{
+  "schema_version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "provenance": {
+    "input_hash": "seed-state",
+    "graph_hash": "",
+    "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+    "seed": 42,
+    "created_at": "2025-01-01T00:00:00Z",
+    "tool_versions": {}
+  },
+  "num_variables": 4,
+  "x_checks": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "z_checks": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "rank_x": 2,
+  "rank_z": 2
+}

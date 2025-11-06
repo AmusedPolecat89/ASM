@@ -1,0 +1,51 @@
+{
+  "config": {
+    "sweeps": 200,
+    "burn_in": 20,
+    "thinning": 1,
+    "ladder": {
+      "replicas": 2,
+      "base_temperature": 1.0,
+      "policy": {
+        "type": "manual",
+        "temperatures": [
+          1.0,
+          30.0
+        ]
+      }
+    },
+    "move_counts": {
+      "generator_flips": 2,
+      "row_ops": 2,
+      "graph_rewires": 2,
+      "worm_moves": 8
+    },
+    "checkpoint": {
+      "interval": 0,
+      "directory": "checkpoints",
+      "max_to_keep": 4
+    },
+    "scoring": {
+      "cmdl": 1.0,
+      "spec": 0.8,
+      "curv": 0.4
+    },
+    "seed_policy": {
+      "master_seed": 4242,
+      "label": "coverage-worm"
+    },
+    "output": {
+      "run_directory": "runs/t3_worm/",
+      "metrics_file": "metrics.csv",
+      "manifest_file": "manifest.json",
+      "checkpoint_dir": "checkpoints",
+      "end_state_dir": "end_state"
+    }
+  },
+  "master_seed": 4242,
+  "seed_label": "coverage-worm",
+  "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+  "graph_hash": "e94382e41399e894774ffcd7be0a09b322d58e9a57e885068c4edca6fa176f2f",
+  "metrics_file": "metrics.csv",
+  "checkpoints": []
+}

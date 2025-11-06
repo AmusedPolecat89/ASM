@@ -1,9 +1,15 @@
 use std::collections::BTreeSet;
+use std::collections::HashMap;
 use std::error::Error;
 use std::fs;
 use std::io::Write;
 use std::path::{Path, PathBuf};
 
+use asm_aut::invariants::ProvenanceInfo;
+use asm_aut::{
+    analyze_state as aut_analyze_state, cluster as aut_cluster, serde_io as aut_serde,
+    AnalysisReport, ClusterOpts as AutClusterOpts, ScanOpts as AutScanOpts,
+};
 use asm_code::dispersion::{DispersionOptions, DispersionReport};
 use asm_code::{serde as code_serde, CSSCode, SpeciesId};
 use asm_graph::{graph_from_json, HypergraphImpl};
@@ -12,7 +18,15 @@ use asm_mcmc::config::RunConfig;
 use asm_mcmc::manifest::RunManifest;
 use asm_mcmc::{run, RunSummary};
 use clap::{Args as ClapArgs, Parser, Subcommand};
+use commands::{
+    extract::{self, ExtractArgs},
+    rg::{self, RgArgs},
+    rg_covariance::{self, RgCovarianceArgs},
+};
 use serde::Deserialize;
+use serde_json::json;
+
+mod commands;
 
 #[derive(Parser, Debug)]
 #[command(name = "asm-sim", about = "ASM ensemble sampler CLI")]
@@ -27,6 +41,12 @@ enum Command {
     Mcmc(McmcArgs),
     /// Analyse an existing run directory and emit dispersion diagnostics.
     Analyze(AnalyzeArgs),
+    /// Run the deterministic RG flow on a vacuum directory.
+    Rg(RgArgs),
+    /// Extract effective couplings for a single state.
+    Extract(ExtractArgs),
+    /// Compare dictionary extraction before/after RG.
+    RgCovariance(RgCovarianceArgs),
 }
 
 #[derive(ClapArgs, Debug)]
@@ -45,14 +65,38 @@ struct McmcArgs {
 #[derive(ClapArgs, Debug)]
 struct AnalyzeArgs {
     /// Input run directory produced by `asm-sim mcmc`.
-    #[arg(long)]
-    input: PathBuf,
+    #[arg(long, required_unless_present = "cluster")]
+    input: Option<PathBuf>,
+    /// Additional analysis directories when clustering.
+    #[arg(long = "inputs", value_name = "PATH")]
+    inputs: Vec<PathBuf>,
     /// Output directory for analysis artefacts.
     #[arg(long)]
     out: PathBuf,
     /// Optional dispersion configuration overriding defaults.
     #[arg(long)]
     dispersion_config: Option<PathBuf>,
+    /// Perform a symmetry scan using `asm-aut`.
+    #[arg(long)]
+    symmetry_scan: bool,
+    /// Cluster existing analysis reports instead of running dispersion.
+    #[arg(long)]
+    cluster: bool,
+    /// Number of Laplacian eigenvalues to retain during symmetry scans.
+    #[arg(long, default_value_t = 16)]
+    laplacian_topk: usize,
+    /// Number of stabiliser eigenvalues to retain during symmetry scans.
+    #[arg(long, default_value_t = 16)]
+    stabilizer_topk: usize,
+    /// Number of clusters to form when `--cluster` is set.
+    #[arg(long = "clusters", default_value_t = 2)]
+    cluster_count: usize,
+    /// Maximum k-means refinement passes when clustering.
+    #[arg(long = "cluster-iterations", default_value_t = 16)]
+    cluster_iterations: usize,
+    /// Emit top-N representative hashes per cluster.
+    #[arg(long = "emit-representatives")]
+    emit_representatives: Option<usize>,
 }
 
 #[derive(Debug, Deserialize)]
@@ -82,6 +126,9 @@ fn main() -> Result<(), Box<dyn Error>> {
     match cli.command {
         Command::Mcmc(args) => run_mcmc(args),
         Command::Analyze(args) => run_analysis(args),
+        Command::Rg(args) => rg::run(&args),
+        Command::Extract(args) => extract::run(&args),
+        Command::RgCovariance(args) => rg_covariance::run(&args),
     }
 }
 
@@ -104,12 +151,25 @@ fn run_mcmc(args: McmcArgs) -> Result<(), Box<dyn Error>> {
 }
 
 fn run_analysis(args: AnalyzeArgs) -> Result<(), Box<dyn Error>> {
+    if args.cluster {
+        run_cluster_mode(&args)
+    } else if args.symmetry_scan {
+        run_symmetry_scan(&args)
+    } else {
+        run_dispersion_mode(&args)
+    }
+}
+
+fn run_dispersion_mode(args: &AnalyzeArgs) -> Result<(), Box<dyn Error>> {
+    let Some(input_dir) = args.input.as_ref() else {
+        return Err("--input is required unless --cluster is set".into());
+    };
     fs::create_dir_all(&args.out)?;
-    let manifest = RunManifest::load(&args.input.join("manifest.json"))?;
-    let (code, graph) = analysis::load_end_state(&args.input)?;
+    let manifest = RunManifest::load(&input_dir.join("manifest.json"))?;
+    let (code, graph) = analysis::load_end_state(input_dir)?;
 
     let (mut species, mut options) =
-        load_dispersion_job(args.dispersion_config.as_deref(), &args.input)?;
+        load_dispersion_job(args.dispersion_config.as_deref(), input_dir)?;
     if species.is_empty() {
         species = code.species_catalog();
     }
@@ -124,9 +184,9 @@ fn run_analysis(args: AnalyzeArgs) -> Result<(), Box<dyn Error>> {
     write_common_c(&args.out, &report, options.tolerance)?;
 
     let checkpoint_paths = if !manifest.checkpoints.is_empty() {
-        analysis::resolve_checkpoint_paths(&args.input, &manifest.checkpoints)
+        analysis::resolve_checkpoint_paths(input_dir, &manifest.checkpoints)
     } else {
-        collect_default_checkpoints(&args.input)?
+        collect_default_checkpoints(input_dir)?
     };
     let mut checkpoint_reports = Vec::new();
     for path in checkpoint_paths {
@@ -144,6 +204,161 @@ fn run_analysis(args: AnalyzeArgs) -> Result<(), Box<dyn Error>> {
     write_checkpoint_summary(&args.out, &checkpoint_reports, &report, options.tolerance)?;
 
     Ok(())
+}
+
+fn run_symmetry_scan(args: &AnalyzeArgs) -> Result<(), Box<dyn Error>> {
+    let Some(input_dir) = args.input.as_ref() else {
+        return Err("--input is required for symmetry scans".into());
+    };
+    fs::create_dir_all(&args.out)?;
+    let manifest = RunManifest::load(&input_dir.join("manifest.json"))?;
+    let (code, graph) = analysis::load_end_state(input_dir)?;
+    let provenance = build_provenance(&manifest, input_dir);
+
+    let scan_opts = AutScanOpts {
+        laplacian_topk: args.laplacian_topk,
+        stabilizer_topk: args.stabilizer_topk,
+        provenance: Some(provenance),
+    };
+    let report = aut_analyze_state(&graph, &code, &scan_opts)?;
+
+    write_json(args.out.join("analysis_report.json"), &report)?;
+    write_spectral_csv(&args.out.join("spectral.csv"), &report)?;
+    let index = json!({
+        "inputs": [
+            {
+                "path": input_dir.display().to_string(),
+                "analysis_hash": report.hashes.analysis_hash,
+            }
+        ]
+    });
+    write_json(args.out.join("index.json"), &index)?;
+    Ok(())
+}
+
+fn run_cluster_mode(args: &AnalyzeArgs) -> Result<(), Box<dyn Error>> {
+    fs::create_dir_all(&args.out)?;
+    let mut sources: Vec<PathBuf> = args.inputs.clone();
+    if let Some(single) = &args.input {
+        if sources.is_empty() {
+            sources.push(single.clone());
+        }
+    }
+    if sources.is_empty() {
+        return Err("provide at least one --inputs path when clustering".into());
+    }
+
+    let mut reports = Vec::new();
+    let mut location_map: HashMap<String, String> = HashMap::new();
+    for source in sources {
+        if source.is_dir() {
+            let candidate = source.join("analysis_report.json");
+            if candidate.exists() {
+                let report = load_analysis_report(&candidate)?;
+                location_map.insert(
+                    report.hashes.analysis_hash.clone(),
+                    candidate.display().to_string(),
+                );
+                reports.push(report);
+            }
+        } else if source.file_name().is_some() {
+            let report = load_analysis_report(&source)?;
+            location_map.insert(
+                report.hashes.analysis_hash.clone(),
+                source.display().to_string(),
+            );
+            reports.push(report);
+        }
+    }
+
+    if reports.is_empty() {
+        return Err("no analysis reports found in the provided paths".into());
+    }
+
+    let default_opts = AutClusterOpts::default();
+    let cluster_opts = AutClusterOpts {
+        k: args.cluster_count.min(reports.len()).max(1),
+        max_iterations: args.cluster_iterations.max(1),
+        seed: default_opts.seed,
+    };
+    let summary = aut_cluster(&reports, &cluster_opts);
+    write_json(args.out.join("cluster_summary.json"), &summary)?;
+
+    let mut index_entries = Vec::new();
+    for report in &reports {
+        let path = location_map
+            .get(&report.hashes.analysis_hash)
+            .cloned()
+            .unwrap_or_default();
+        index_entries.push(json!({
+            "analysis_hash": report.hashes.analysis_hash,
+            "path": path,
+        }));
+    }
+    write_json(
+        args.out.join("index.json"),
+        &json!({ "reports": index_entries }),
+    )?;
+
+    if let Some(limit) = args.emit_representatives {
+        let mut clusters = Vec::new();
+        for cluster in &summary.clusters {
+            let mut members = Vec::new();
+            for hash in cluster.members.iter().take(limit) {
+                let path = location_map.get(hash).cloned();
+                members.push(json!({ "hash": hash, "path": path }));
+            }
+            clusters.push(json!({
+                "cluster_id": cluster.cluster_id,
+                "members": members,
+            }));
+        }
+        write_json(
+            args.out.join("representatives.json"),
+            &json!({ "clusters": clusters }),
+        )?;
+    }
+
+    Ok(())
+}
+
+fn build_provenance(manifest: &RunManifest, input_dir: &Path) -> ProvenanceInfo {
+    let run_id = manifest
+        .config
+        .output
+        .run_directory
+        .as_ref()
+        .and_then(|path| path.to_str())
+        .map(|s| s.to_string())
+        .or_else(|| Some(input_dir.display().to_string()));
+    ProvenanceInfo {
+        seed: Some(manifest.master_seed),
+        run_id,
+        checkpoint_id: None,
+        commit: None,
+    }
+}
+
+fn write_spectral_csv(path: &Path, report: &AnalysisReport) -> Result<(), Box<dyn Error>> {
+    if let Some(parent) = path.parent() {
+        fs::create_dir_all(parent)?;
+    }
+    let mut file = fs::File::create(path)?;
+    writeln!(file, "spectrum,index,value")?;
+    for (idx, value) in report.spectral.laplacian_topk.iter().enumerate() {
+        writeln!(file, "laplacian,{},{:.9}", idx, value)?;
+    }
+    for (idx, value) in report.spectral.stabilizer_topk.iter().enumerate() {
+        writeln!(file, "stabilizer,{},{:.9}", idx, value)?;
+    }
+    Ok(())
+}
+
+fn load_analysis_report(path: &Path) -> Result<AnalysisReport, Box<dyn Error>> {
+    let json = aut_serde::read_json(path).map_err(|err| Box::new(err) as Box<dyn Error>)?;
+    let report =
+        aut_serde::analysis_from_json(&json).map_err(|err| Box::new(err) as Box<dyn Error>)?;
+    Ok(report)
 }
 
 fn load_config(path: &Path, out_dir: &Path) -> Result<RunConfig, Box<dyn Error>> {

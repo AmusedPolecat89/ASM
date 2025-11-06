@@ -16,13 +16,13 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut args = std::env::args().skip(1);
     let code_path = args
         .next()
-        .ok_or_else(|| "usage: defect_consistency <code.json> <states.json> <out.csv>")?;
+        .ok_or("usage: defect_consistency <code.json> <states.json> <out.csv>")?;
     let states_path = args
         .next()
-        .ok_or_else(|| "usage: defect_consistency <code.json> <states.json> <out.csv>")?;
+        .ok_or("usage: defect_consistency <code.json> <states.json> <out.csv>")?;
     let out_path = args
         .next()
-        .ok_or_else(|| "usage: defect_consistency <code.json> <states.json> <out.csv>")?;
+        .ok_or("usage: defect_consistency <code.json> <states.json> <out.csv>")?;
 
     let code_json = fs::read_to_string(&code_path)?;
     let code = code_serde::from_json(&code_json)?;
@@ -62,12 +62,7 @@ fn evaluate_states(
         let defects = code.find_defects(&violations);
         let summary = summarize_defects(&defects);
         let species = summarise_species(&defects);
-        rows.push([
-            idx.to_string(),
-            pass_label.to_string(),
-            summary,
-            species,
-        ]);
+        rows.push([idx.to_string(), pass_label.to_string(), summary, species]);
     }
     Ok(())
 }

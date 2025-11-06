@@ -1,0 +1,27 @@
+[package]
+name = "asm-aut"
+version = "0.1.0"
+edition = "2021"
+description = "Automorphism and invariant analysis utilities for ASM"
+license = "MIT"
+
+[dependencies]
+asm-core = { path = "../asm-core" }
+asm-graph = { path = "../asm-graph" }
+asm-code = { path = "../asm-code" }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
+rand = { workspace = true }
+thiserror = { workspace = true }
+nalgebra = { version = "0.32", features = ["serde-serialize"] }
+itertools = "0.11"
+hex = "0.4"
+
+[dev-dependencies]
+criterion = { workspace = true }
+serde_json = { workspace = true }
+
+[[bench]]
+name = "scan_vacuum"
+harness = false

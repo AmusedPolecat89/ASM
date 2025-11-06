@@ -10,6 +10,8 @@ asm-core = { path = "../asm-core" }
 asm-graph = { path = "../asm-graph" }
 asm-code = { path = "../asm-code" }
 asm-mcmc = { path = "../asm-mcmc" }
+asm-aut = { path = "../asm-aut" }
+asm-rg = { path = "../asm-rg" }
 clap = { version = "4.5", features = ["derive"] }
 serde = { workspace = true }
 serde_json = { workspace = true }

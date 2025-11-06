@@ -1,0 +1,48 @@
+{
+  "config": {
+    "sweeps": 220,
+    "burn_in": 20,
+    "thinning": 1,
+    "ladder": {
+      "replicas": 1,
+      "base_temperature": 1.0,
+      "policy": {
+        "type": "geometric",
+        "ratio": 1.0
+      }
+    },
+    "move_counts": {
+      "generator_flips": 2,
+      "row_ops": 2,
+      "graph_rewires": 2,
+      "worm_moves": 1
+    },
+    "checkpoint": {
+      "interval": 0,
+      "directory": "checkpoints",
+      "max_to_keep": 4
+    },
+    "scoring": {
+      "cmdl": 1.0,
+      "spec": 0.7,
+      "curv": 0.3
+    },
+    "seed_policy": {
+      "master_seed": 2002,
+      "label": "short-alt"
+    },
+    "output": {
+      "run_directory": "runs/t1_seed1/",
+      "metrics_file": "metrics.csv",
+      "manifest_file": "manifest.json",
+      "checkpoint_dir": "checkpoints",
+      "end_state_dir": "end_state"
+    }
+  },
+  "master_seed": 2002,
+  "seed_label": "short-alt",
+  "code_hash": "e566a0b20848d18dc52df4c716a6ba02613110e90a5a7e4ccd1d51af2b0e1110",
+  "graph_hash": "c9823d0b3e92bc84f99c8b93f865c94818af1eb7996c75bb6f4abe9c6238fc04",
+  "metrics_file": "metrics.csv",
+  "checkpoints": []
+}
