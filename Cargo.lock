@@ -361,6 +361,7 @@ dependencies = [
  "asm-int",
  "asm-land",
  "asm-spec",
+ "criterion",
  "globset",
  "serde",
  "serde_json",

@@ -1,6 +1,6 @@
 use std::sync::Arc;
 
-use asm_core::rng::RngHandle;
+use asm_core::{rng::RngHandle, Hypergraph};
 use asm_graph::gen_bounded_degree;
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
 

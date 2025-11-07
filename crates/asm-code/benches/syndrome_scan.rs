@@ -1,5 +1,5 @@
 use asm_code::{CSSCode, StateHandle};
-use asm_core::{ConstraintProjector, RunProvenance, SchemaVersion};
+use asm_core::{RunProvenance, SchemaVersion};
 use criterion::{criterion_group, criterion_main, Criterion};
 
 fn provenance() -> RunProvenance {
