@@ -110,7 +110,7 @@ fn sample_inputs() -> AssertionInputs {
 }
 
 fn assertions_benchmark(c: &mut Criterion) {
-    let mut inputs = sample_inputs();
+    let inputs = sample_inputs();
     let policy = Policy::default();
     c.bench_function("assertions/light", |b| {
         b.iter(|| {

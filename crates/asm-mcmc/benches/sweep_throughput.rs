@@ -1,7 +1,9 @@
 use asm_code::css::CSSCode;
-use asm_core::provenance::{RunProvenance, SchemaVersion};
-use asm_graph::flags::{HypergraphConfig, KUniformity};
-use asm_graph::HypergraphImpl;
+use asm_core::{
+    provenance::{RunProvenance, SchemaVersion},
+    Hypergraph,
+};
+use asm_graph::{HypergraphConfig, HypergraphImpl, KUniformity};
 use criterion::{criterion_group, criterion_main, Criterion};
 
 use asm_mcmc::{run, MoveCounts, RunConfig};
