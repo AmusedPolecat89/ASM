@@ -23,11 +23,19 @@ fi
 
 PANDOC_OPTS=(
   "${PAPER_DIR}/main.md"
-  "--citeproc"
   "--bibliography" "${PAPER_DIR}/refs.bib"
   "--metadata" "commit=${COMMIT}"
   "--metadata" "build_date=${BUILD_DATE}"
-  "-o" "${PAPER_DIR}/paper.pdf"
 )
+
+if pandoc --citeproc --version >/dev/null 2>&1; then
+  PANDOC_OPTS+=("--citeproc")
+elif command -v pandoc-citeproc >/dev/null 2>&1; then
+  PANDOC_OPTS+=("--filter" "pandoc-citeproc")
+else
+  echo "[paper] Warning: neither pandoc --citeproc nor pandoc-citeproc is available; references will not be resolved." >&2
+fi
+
+PANDOC_OPTS+=("-o" "${PAPER_DIR}/paper.pdf")
 
 pandoc "${PANDOC_OPTS[@]}"

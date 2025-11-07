@@ -12,20 +12,77 @@ import argparse
 import csv
 import json
 import pathlib
-from typing import Dict, Iterable, List, Tuple
+from typing import Dict, Iterable, List, Sequence, Tuple
 
-import matplotlib
+try:
+    import matplotlib
 
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt  # noqa: E402
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt  # noqa: E402
 
-plt.rcParams.update({
-    "font.family": "DejaVu Sans",
-    "figure.dpi": 150,
-})
+    plt.rcParams.update({
+        "font.family": "DejaVu Sans",
+        "figure.dpi": 150,
+    })
+    HAS_MATPLOTLIB = True
+except ModuleNotFoundError:
+    matplotlib = None  # type: ignore[assignment]
+    plt = None  # type: ignore[assignment]
+    HAS_MATPLOTLIB = False
 
 def _ensure_dir(path: pathlib.Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
+
+
+def _escape_pdf_text(value: str) -> str:
+    return value.replace("\\", "\\\\").replace("(", "\\(").replace(")", "\\)")
+
+
+def _write_placeholder_pdf(path: pathlib.Path, title: str, body: Sequence[str]) -> None:
+    header = "%PDF-1.4\n"
+    lines = [
+        "BT",
+        "/F1 18 Tf",
+        "72 720 Td",
+        f"({_escape_pdf_text(title)}) Tj",
+        "T*",
+        "/F1 12 Tf",
+    ]
+    if body:
+        for line in body:
+            lines.append(f"({_escape_pdf_text(line)}) Tj")
+            lines.append("T*")
+    else:
+        lines.append("(No data available) Tj")
+        lines.append("T*")
+    lines.append("ET")
+    stream = "\n".join(lines) + "\n"
+    stream_bytes = stream.encode("utf-8")
+    objects = [
+        "1 0 obj<< /Type /Catalog /Pages 2 0 R >>endobj\n",
+        "2 0 obj<< /Type /Pages /Kids [3 0 R] /Count 1 >>endobj\n",
+        "3 0 obj<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>endobj\n",
+        f"4 0 obj<< /Length {len(stream_bytes)} >>stream\n{stream}endstream\nendobj\n",
+        "5 0 obj<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>endobj\n",
+    ]
+    offsets = []
+    cursor = len(header)
+    for obj in objects:
+        offsets.append(cursor)
+        cursor += len(obj.encode("utf-8"))
+    xref = ["xref\n", "0 6\n", "0000000000 65535 f \n"]
+    for offset in offsets:
+        xref.append(f"{offset:010d} 00000 n \n")
+    trailer = [
+        "trailer<< /Size 6 /Root 1 0 R >>\n",
+        "startxref\n",
+        f"{cursor}\n",
+        "%%EOF\n",
+    ]
+    pdf_bytes = header.encode("utf-8") + b"".join(obj.encode("utf-8") for obj in objects) + b"".join(
+        part.encode("utf-8") for part in xref + trailer
+    )
+    path.write_bytes(pdf_bytes)
 
 
 def _discover_energy_csv(root: pathlib.Path, fixtures: pathlib.Path) -> List[pathlib.Path]:
@@ -64,37 +121,71 @@ def _load_csv_series(path: pathlib.Path) -> Tuple[List[float], List[float]]:
 
 
 def _plot_energy(figures_dir: pathlib.Path, sources: Iterable[pathlib.Path]) -> None:
+    generated = False
     for source in sources:
         xs, ys = _load_csv_series(source)
         seed = source.stem.split("_")[-1]
-        fig, ax = plt.subplots(figsize=(4.8, 3.2))
-        ax.plot(xs, ys, marker="o", color="#1b9e77", linewidth=1.5)
-        ax.set_xlabel("Sweep")
-        ax.set_ylabel("Energy")
-        ax.set_title(f"Energy vs sweep ({seed})")
-        ax.grid(True, alpha=0.3)
         out_path = figures_dir / f"energy_vs_sweep_{seed}.pdf"
-        fig.tight_layout()
-        fig.savefig(out_path)
-        plt.close(fig)
+        if HAS_MATPLOTLIB:
+            fig, ax = plt.subplots(figsize=(4.8, 3.2))
+            ax.plot(xs, ys, marker="o", color="#1b9e77", linewidth=1.5)
+            ax.set_xlabel("Sweep")
+            ax.set_ylabel("Energy")
+            ax.set_title(f"Energy vs sweep ({seed})")
+            ax.grid(True, alpha=0.3)
+            fig.tight_layout()
+            fig.savefig(out_path)
+            plt.close(fig)
+        else:
+            body = [
+                "Matplotlib not available; rendered fallback figure.",
+                f"Source: {source.name}",
+                f"Points: {len(xs)}",
+            ]
+            _write_placeholder_pdf(out_path, f"Energy vs sweep ({seed})", body)
+        generated = True
+    if not generated:
+        _write_placeholder_pdf(
+            figures_dir / "energy_vs_sweep_placeholder.pdf",
+            "Energy vs sweep",
+            ["No energy data discovered."],
+        )
 
 
 def _plot_dispersion(figures_dir: pathlib.Path, sources: Iterable[pathlib.Path]) -> None:
+    generated = False
     for source in sources:
         xs, ys = _load_csv_series(source)
-        fig, ax = plt.subplots(figsize=(4.2, 3.2))
-        ax.scatter(xs, ys, color="#d95f02")
-        coeffs = _fit_parabola(xs, ys)
-        dense_x = _linspace(min(xs), max(xs), 100)
-        ax.plot(dense_x, [_eval_parabola(coeffs, x) for x in dense_x], color="#7570b3")
-        ax.set_xlabel("k")
-        ax.set_ylabel("Energy")
-        ax.set_title(source.stem.replace("_", " "))
-        ax.grid(True, alpha=0.3)
         out_path = figures_dir / f"{source.stem}.pdf"
-        fig.tight_layout()
-        fig.savefig(out_path)
-        plt.close(fig)
+        title = source.stem.replace("_", " ")
+        if HAS_MATPLOTLIB:
+            fig, ax = plt.subplots(figsize=(4.2, 3.2))
+            ax.scatter(xs, ys, color="#d95f02")
+            coeffs = _fit_parabola(xs, ys)
+            dense_x = _linspace(min(xs), max(xs), 100)
+            ax.plot(dense_x, [_eval_parabola(coeffs, x) for x in dense_x], color="#7570b3")
+            ax.set_xlabel("k")
+            ax.set_ylabel("Energy")
+            ax.set_title(title)
+            ax.grid(True, alpha=0.3)
+            fig.tight_layout()
+            fig.savefig(out_path)
+            plt.close(fig)
+        else:
+            coeffs = _fit_parabola(xs, ys)
+            body = [
+                "Matplotlib not available; rendered fallback figure.",
+                f"Source: {source.name}",
+                f"Fitted parabola: a={coeffs[0]:.3g}, b={coeffs[1]:.3g}, c={coeffs[2]:.3g}",
+            ]
+            _write_placeholder_pdf(out_path, title, body)
+        generated = True
+    if not generated:
+        _write_placeholder_pdf(
+            figures_dir / "dispersion_placeholder.pdf",
+            "Dispersion",
+            ["No dispersion data discovered."],
+        )
 
 
 def _fit_parabola(xs: List[float], ys: List[float]) -> Tuple[float, float, float]:
@@ -150,18 +241,28 @@ def _eval_parabola(coeffs: Tuple[float, float, float], x: float) -> float:
 
 
 def _plot_covariance(figures_dir: pathlib.Path, source: pathlib.Path | None) -> None:
+    target = figures_dir / "rg_cov.pdf"
     if source is None or not source.exists():
+        _write_placeholder_pdf(target, "RG covariance summary", ["No covariance data discovered."])
         return
     xs, ys = _load_csv_series(source)
-    fig, ax = plt.subplots(figsize=(4.2, 3.0))
-    ax.plot(xs, ys, marker="s", color="#66a61e")
-    ax.set_xlabel("Index")
-    ax.set_ylabel("|Δc_kin|")
-    ax.set_title("RG covariance summary")
-    ax.grid(True, alpha=0.3)
-    fig.tight_layout()
-    fig.savefig(figures_dir / "rg_cov.pdf")
-    plt.close(fig)
+    if HAS_MATPLOTLIB:
+        fig, ax = plt.subplots(figsize=(4.2, 3.0))
+        ax.plot(xs, ys, marker="s", color="#66a61e")
+        ax.set_xlabel("Index")
+        ax.set_ylabel("|Δc_kin|")
+        ax.set_title("RG covariance summary")
+        ax.grid(True, alpha=0.3)
+        fig.tight_layout()
+        fig.savefig(target)
+        plt.close(fig)
+    else:
+        body = [
+            "Matplotlib not available; rendered fallback figure.",
+            f"Source: {source.name}",
+            f"Samples: {len(xs)}",
+        ]
+        _write_placeholder_pdf(target, "RG covariance summary", body)
 
 
 def _plot_ablations(figures_dir: pathlib.Path, sources: Iterable[pathlib.Path]) -> None:
@@ -178,22 +279,31 @@ def _plot_ablations(figures_dir: pathlib.Path, sources: Iterable[pathlib.Path]) 
             lo = min(values)
             hi = max(values)
             items.append((plan, name, mean, lo, hi))
+    target = figures_dir / "ablations_overview.pdf"
     if not items:
+        _write_placeholder_pdf(target, "Ablation KPI summary", ["No ablation data discovered."])
         return
     items.sort(key=lambda item: (item[0], item[1]))
-    fig, ax = plt.subplots(figsize=(5.6, 3.4))
-    positions = range(len(items))
-    means = [item[2] for item in items]
-    errors = [[item[2] - item[3] for item in items], [item[4] - item[2] for item in items]]
-    ax.errorbar(positions, means, yerr=errors, fmt="o", color="#e7298a", capsize=4)
-    ax.set_xticks(list(positions))
-    ax.set_xticklabels([f"{plan}\n{name}" for plan, name, *_ in items], rotation=45, ha="right")
-    ax.set_ylabel("KPI value")
-    ax.set_title("Ablation KPI summary")
-    ax.grid(True, axis="y", alpha=0.3)
-    fig.tight_layout()
-    fig.savefig(figures_dir / "ablations_overview.pdf")
-    plt.close(fig)
+    if HAS_MATPLOTLIB:
+        fig, ax = plt.subplots(figsize=(5.6, 3.4))
+        positions = range(len(items))
+        means = [item[2] for item in items]
+        errors = [[item[2] - item[3] for item in items], [item[4] - item[2] for item in items]]
+        ax.errorbar(positions, means, yerr=errors, fmt="o", color="#e7298a", capsize=4)
+        ax.set_xticks(list(positions))
+        ax.set_xticklabels([f"{plan}\n{name}" for plan, name, *_ in items], rotation=45, ha="right")
+        ax.set_ylabel("KPI value")
+        ax.set_title("Ablation KPI summary")
+        ax.grid(True, axis="y", alpha=0.3)
+        fig.tight_layout()
+        fig.savefig(target)
+        plt.close(fig)
+    else:
+        body = [
+            "Matplotlib not available; rendered fallback figure.",
+        ]
+        body.extend(f"{plan} / {name}: {mean:.3g} (min {lo:.3g}, max {hi:.3g})" for plan, name, mean, lo, hi in items)
+        _write_placeholder_pdf(target, "Ablation KPI summary", body)
 
 
 def build_figures(replication: pathlib.Path, fixtures: pathlib.Path, figures: pathlib.Path) -> None:
