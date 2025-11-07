@@ -1,0 +1,24 @@
+[package]
+name = "asm-dsr"
+version = "0.16.0"
+edition = "2021"
+authors = ["ASM Contributors"]
+description = "Dataset registry for ASM community submissions"
+license = "MIT"
+
+[dependencies]
+asm-core = { path = "../asm-core" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+sha2 = { workspace = true }
+rusqlite = { version = "0.29", features = ["bundled", "chrono"] }
+chrono = { version = "0.4", default-features = false, features = ["alloc", "clock"] }
+zip = { version = "0.6", default-features = false, features = ["deflate"] }
+walkdir = { workspace = true }
+hex = "0.4"
+csv = "1.3"
+
+[dev-dependencies]
+tempfile = { workspace = true }
+serde_json = { workspace = true }

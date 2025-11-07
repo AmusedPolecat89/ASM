@@ -1,0 +1,30 @@
+[package]
+name = "asm-land"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_yaml = "0.9"
+sha2 = { workspace = true }
+thiserror = { workspace = true }
+rand = { workspace = true }
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+asm-core = { path = "../asm-core" }
+asm-int = { path = "../asm-int" }
+rayon = "1.7"
+
+[dev-dependencies]
+tempfile = { workspace = true }
+assert-json-diff = "2.0"
+criterion = { workspace = true }
+
+[lib]
+name = "asm_land"
+path = "src/lib.rs"
+
+[[bench]]
+name = "landscape_throughput"
+path = "benches/landscape_throughput.rs"
+harness = false

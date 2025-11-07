@@ -1,0 +1,6 @@
+{
+  "benchmark": "thy_assertions_throughput",
+  "variant": "assertions/light",
+  "runs": 1,
+  "notes": "Placeholder baseline; refresh via cargo bench -p asm-thy --bench thy_assertions_throughput"
+}

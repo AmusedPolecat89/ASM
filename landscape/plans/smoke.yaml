@@ -1,0 +1,36 @@
+---
+seeds:
+  - 42
+  - 43
+graph:
+  degree_cap: 3
+  k_uniform: 3
+  size: 128
+  generator: regular
+code:
+  density: 0.1
+  css_variant: css-a
+  rowop_rate: 0.2
+sampler:
+  sweeps: 200
+  worm_weight: 0.3
+  ladder: 2
+  checkpoints: 1
+spectrum:
+  k_points: 32
+  modes: 2
+gauge:
+  closure_tol: 0.001
+  ward_tol: 0.001
+interact:
+  steps: 64
+  dt: 0.02
+  measure: default
+  fit: default
+filters: ../filters/default.yaml
+outputs:
+  layout: flat
+  keep_intermediate: true
+rules:
+  - id: 0
+    label: default

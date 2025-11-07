@@ -1,0 +1,23 @@
+[package]
+name = "asm-host"
+version = "0.16.0"
+edition = "2021"
+authors = ["ASM Contributors"]
+description = "Sandboxed plugin host for the ASM ecosystem"
+license = "MIT"
+
+[dependencies]
+asm-core = { path = "../asm-core" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+sha2 = { workspace = true }
+toml = "0.8"
+libloading = { version = "0.8", optional = true }
+walkdir = { workspace = true }
+chrono = { version = "0.4", default-features = false, features = ["alloc", "clock"] }
+hex = "0.4"
+
+[features]
+default = ["dynamic"]
+dynamic = ["libloading"]

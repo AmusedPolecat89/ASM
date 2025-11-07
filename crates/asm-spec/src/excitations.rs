@@ -25,6 +25,7 @@ pub enum ExcitationKind {
     RandomLowWeight,
 }
 
+#[allow(clippy::derivable_impls)]
 impl Default for ExcitationKind {
     fn default() -> Self {
         ExcitationKind::LocalDefect

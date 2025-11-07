@@ -1,0 +1,5 @@
+{
+  "bench": "plugin_call_overhead",
+  "samples_per_second": 12000,
+  "timestamp": "2024-06-01T00:00:00Z"
+}

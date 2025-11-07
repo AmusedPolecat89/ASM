@@ -1,0 +1,7 @@
+name = "code_css_variant"
+version = "0.1.0"
+abi_version = 1
+capabilities = ["code"]
+minimum_workspace = "0.16"
+license = "MIT"
+description = "Demonstration CSS code plugin stub"

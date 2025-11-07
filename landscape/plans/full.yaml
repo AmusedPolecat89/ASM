@@ -1,0 +1,48 @@
+---
+seeds:
+  - 200
+  - 201
+  - 202
+  - 203
+  - 204
+  - 205
+  - 206
+  - 207
+  - 208
+  - 209
+graph:
+  degree_cap: 5
+  k_uniform: 4
+  size: 512
+  generator: random
+code:
+  density: 0.06
+  css_variant: css-c
+  rowop_rate: 0.12
+sampler:
+  sweeps: 600
+  worm_weight: 0.4
+  ladder: 4
+  checkpoints: 3
+spectrum:
+  k_points: 64
+  modes: 4
+gauge:
+  closure_tol: 0.0002
+  ward_tol: 0.0002
+interact:
+  steps: 128
+  dt: 0.015
+  measure: full
+  fit: heavy
+filters: ../filters/default.yaml
+outputs:
+  layout: per-seed
+  keep_intermediate: false
+rules:
+  - id: 0
+    label: default
+  - id: 1
+    label: variant-a
+  - id: 2
+    label: variant-b

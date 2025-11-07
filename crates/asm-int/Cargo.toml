@@ -1,0 +1,29 @@
+[package]
+name = "asm-int"
+version = "0.1.0"
+edition = "2021"
+description = "Deterministic few-body interaction utilities for ASM"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+asm-core = { path = "../asm-core" }
+asm-spec = { path = "../asm-spec" }
+asm-gauge = { path = "../asm-gauge" }
+asm-rg = { path = "../asm-rg" }
+asm-code = { path = "../asm-code" }
+asm-graph = { path = "../asm-graph" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_yaml = "0.9"
+rand = { workspace = true }
+sha2 = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+criterion = { workspace = true }
+
+[[bench]]
+name = "interact_throughput"
+path = "../../benches/interact_throughput.rs"
+harness = false

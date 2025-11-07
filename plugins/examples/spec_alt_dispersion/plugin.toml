@@ -1,0 +1,7 @@
+name = "spec_alt_dispersion"
+version = "0.1.0"
+abi_version = 1
+capabilities = ["spectrum"]
+minimum_workspace = "0.16"
+license = "MIT"
+description = "Alternative dispersion analyser stub"

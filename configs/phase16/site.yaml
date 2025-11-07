@@ -1,0 +1,7 @@
+title: "ASM Community Dashboard"
+navbar:
+  - home
+  - vacua
+featured_runs:
+  - t1_seed0
+  - t1_seed1
