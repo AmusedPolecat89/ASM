@@ -25,6 +25,31 @@ SKIP_PAPER_FORCED=0
 SKIP_WEB_FORCED=0
 LIGHT=0
 
+CARGO_METADATA_JSON=""
+
+bench_exists() {
+  local pkg="$1" bench="$2"
+  if [[ -z "${CARGO_METADATA_JSON:-}" ]]; then
+    if ! CARGO_METADATA_JSON="$(cargo metadata --no-deps --format-version 1 2>/dev/null)"; then
+      echo "Warning: unable to load cargo metadata; skipping benchmarks" >&2
+      return 1
+    fi
+  fi
+  jq -er --arg p "$pkg" --arg b "$bench" '
+      .packages[]
+      | select(.name==$p)
+      | [.targets[] | select(.kind[]=="bench") | .name]
+      | index($b) != null
+    ' <<<"$CARGO_METADATA_JSON" >/dev/null 2>&1
+}
+
+maybe_add() {
+  local p="$1" b="$2"
+  if bench_exists "$p" "$b"; then
+    BENCH_COMMANDS+=("cargo bench -p $p --bench $b")
+  fi
+}
+
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --plan)
@@ -89,7 +114,7 @@ if [[ ! -f Cargo.toml ]]; then
   exit 1
 fi
 
-for bin in cargo python3 git; do
+for bin in cargo python3 git jq; do
   if ! command -v "$bin" >/dev/null 2>&1; then
     echo "Required command '$bin' not found in PATH" >&2
     exit 1
@@ -291,21 +316,19 @@ run_cmd "replication suite" ./replication/run.sh
 REPL_PASSED=1
 
 section "Benchmarks"
+BENCH_COMMANDS=()
 if [[ "$LIGHT" -eq 1 ]]; then
-  BENCH_COMMANDS=(
-    "cargo bench -p asm-spec --bench spectrum_throughput"
-    "cargo bench -p asm-gauge --bench gauge_throughput"
-    "cargo bench -p asm-int --bench interact_throughput"
-  )
+  maybe_add asm-spec  spectrum_throughput
+  maybe_add asm-gauge gauge_throughput
+  maybe_add asm-int   interact_throughput
 else
-  BENCH_COMMANDS=(
-    "cargo bench -p asm-spec --bench spectrum_throughput"
-    "cargo bench -p asm-gauge --bench gauge_throughput"
-    "cargo bench -p asm-int --bench interact_throughput"
-    "cargo bench -p asm-land --bench landscape_throughput"
-    "cargo bench -p asm-web --bench web_throughput"
-    "cargo bench -p asm-thy --bench thy_assertions_throughput"
-  )
+  maybe_add asm-spec  spectrum_throughput
+  maybe_add asm-gauge gauge_throughput
+  maybe_add asm-int   interact_throughput
+  maybe_add asm-land  landscape_throughput
+  maybe_add asm-host  plugin_overhead
+  maybe_add asm-web   web_throughput
+  maybe_add asm-thy   thy_assertions_throughput
 fi
 for cmd in "${BENCH_COMMANDS[@]}"; do
   run_cmd "$cmd" bash -lc "$cmd"
@@ -323,6 +346,7 @@ if [[ -d target/criterion ]]; then
 fi
 
 section "Heavy landscape pipeline"
+mkdir -p "$LANDSCAPE_OUT" "$LANDSCAPE_OUT/assertions"
 run_cmd "asm-sim landscape run" asm-sim landscape run --plan "$PLAN_ABS" --out "$LANDSCAPE_OUT" --resume --concurrency "$CONCURRENCY"
 run_cmd "asm-sim landscape summarize" asm-sim landscape summarize --root "$LANDSCAPE_OUT" --filters landscape/filters/default.yaml --out "$LANDSCAPE_OUT/summary"
 run_cmd "asm-sim landscape atlas" asm-sim landscape atlas --root "$LANDSCAPE_OUT" --out "$LANDSCAPE_OUT/atlas"
