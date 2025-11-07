@@ -66,6 +66,7 @@ pub fn run(args: &AssertBatchArgs) -> Result<(), Box<dyn Error>> {
         .filter_map(|entry| entry.ok())
         .filter(|entry| entry.file_type().map(|ft| ft.is_dir()).unwrap_or(false))
         .map(|entry| entry.path())
+        .filter(|path| path.join("spectrum/spectrum_report.json").exists())
         .collect();
     job_dirs.sort();
 
