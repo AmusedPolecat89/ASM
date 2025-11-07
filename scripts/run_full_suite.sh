@@ -303,7 +303,6 @@ else
     "cargo bench -p asm-gauge --bench gauge_throughput"
     "cargo bench -p asm-int --bench interact_throughput"
     "cargo bench -p asm-land --bench landscape_throughput"
-    "cargo bench -p asm-host --bench plugin_overhead"
     "cargo bench -p asm-web --bench web_throughput"
     "cargo bench -p asm-thy --bench thy_assertions_throughput"
   )
