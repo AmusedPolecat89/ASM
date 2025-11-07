@@ -89,19 +89,38 @@ if [[ ! -f Cargo.toml ]]; then
   exit 1
 fi
 
-for bin in cargo asm-sim python3 git; do
+for bin in cargo python3 git; do
   if ! command -v "$bin" >/dev/null 2>&1; then
     echo "Required command '$bin' not found in PATH" >&2
+    exit 1
+  fi
+done
+
+if ! command -v asm-sim >/dev/null 2>&1; then
+  for candidate in "$git_root/target/release/asm-sim" "$git_root/target/debug/asm-sim"; do
+    if [[ -x "$candidate" ]]; then
+      export PATH="$(dirname "$candidate"):$PATH"
+      break
+    fi
+  done
+fi
+
+if ! command -v asm-sim >/dev/null 2>&1; then
+  echo "asm-sim binary not found; building via cargo build --bin asm-sim"
+  cargo build --quiet --bin asm-sim
+  export PATH="$git_root/target/debug:$PATH"
+  if ! command -v asm-sim >/dev/null 2>&1; then
+    echo "Failed to locate asm-sim binary after build" >&2
     exit 1
   fi
 fi
 
 RUN_TS="$(date -u +"%Y%m%d_%H%M%S")"
-ABS_OUT=$(python3 - <<'PY'
+ABS_OUT=$(python3 - "$OUT_ROOT" <<'PY'
 import os, sys
 print(os.path.abspath(sys.argv[1]))
 PY
-"$OUT_ROOT")
+)
 RUN_DIR="$ABS_OUT/run_${RUN_TS}"
 mkdir -p "$RUN_DIR"
 
@@ -114,11 +133,11 @@ ARTIFACT_DIR="$RUN_DIR/artifacts"
 FIG_DIR="$RUN_DIR/figures"
 mkdir -p "$BENCH_DIR" "$ARTIFACT_DIR" "$FIG_DIR"
 
-PLAN_ABS=$(python3 - <<'PY'
+PLAN_ABS=$(python3 - "$PLAN_PATH" <<'PY'
 import os, sys
 print(os.path.abspath(sys.argv[1]))
 PY
-"$PLAN_PATH")
+)
 
 if [[ ! -f "$PLAN_ABS" ]]; then
   echo "Landscape plan not found: $PLAN_ABS" >&2
@@ -232,7 +251,7 @@ env = {
     },
     "rustc_version": run(["rustc", "--version"]),
     "cargo_version": run(["cargo", "--version"]),
-    "asm_sim_version": run(["asm-sim", "--version"]),
+    "asm_sim_version": run(["asm-sim", "version", "--long"]),
     "cpu": {
         "model": cpu_model(),
         "cores": os.cpu_count(),
