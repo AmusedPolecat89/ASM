@@ -10,6 +10,12 @@ members = [
     "crates/asm-exp",
     "crates/asm-spec",
     "crates/asm-gauge",
+    "crates/asm-int",
+    "crates/asm-land",
+    "crates/asm-thy",
+    "crates/asm-host",
+    "crates/asm-dsr",
+    "crates/asm-web",
 ]
 resolver = "2"
 
@@ -27,3 +33,5 @@ proptest = "1.4"
 criterion = { version = "0.5", default-features = false, features = ["html_reports"] }
 siphasher = "0.3"
 tempfile = "3.10"
+globset = "0.4"
+walkdir = "2.4"

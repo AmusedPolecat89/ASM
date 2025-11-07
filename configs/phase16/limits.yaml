@@ -1,0 +1,4 @@
+cpu_time_seconds: 120
+max_rss_mb: 2048
+tmpdir_mb: 512
+wall_seconds: 180

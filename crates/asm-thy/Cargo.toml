@@ -1,0 +1,31 @@
+[package]
+name = "asm-thy"
+version = "0.1.0"
+edition = "2021"
+description = "Theory assertion and manuscript bundling utilities for ASM Phase 15"
+
+[dependencies]
+asm-core = { path = "../asm-core" }
+asm-spec = { path = "../asm-spec" }
+asm-gauge = { path = "../asm-gauge" }
+asm-int = { path = "../asm-int" }
+asm-land = { path = "../asm-land" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
+thiserror = { workspace = true }
+globset = "0.4"
+walkdir = "2.4"
+
+[dev-dependencies]
+serde_yaml = "0.9"
+tempfile = { workspace = true }
+
+[lib]
+name = "asm_thy"
+path = "src/lib.rs"
+
+[[bench]]
+name = "thy_assertions_throughput"
+path = "benches/thy_assertions_throughput.rs"
+harness = false

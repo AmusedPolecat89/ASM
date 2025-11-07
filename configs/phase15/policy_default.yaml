@@ -1,0 +1,13 @@
+rounding: 1e-9
+abs_tol: 1e-9
+rel_tol: 1e-5
+closure_tol: 1e-6
+ward_tol: 1e-5
+rel_tol_lin: 5e-2
+fit_resid_max: 1.5
+landscape_rate:
+  min: 0.4
+  max: 0.9
+strict: false
+require_closure: true
+require_ward: true

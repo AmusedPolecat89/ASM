@@ -16,7 +16,7 @@ fn canonicalize(value: Value) -> Value {
             for (key, val) in map {
                 ordered.insert(key, canonicalize(val));
             }
-            Value::Object(Map::from_iter(ordered.into_iter()))
+            Value::Object(Map::from_iter(ordered))
         }
         Value::Array(values) => {
             let canonical_values = values.into_iter().map(canonicalize).collect();

@@ -1,0 +1,5 @@
+{
+  "bench": "web_pages_per_second",
+  "pages_per_second": 450,
+  "timestamp": "2024-06-01T00:00:00Z"
+}

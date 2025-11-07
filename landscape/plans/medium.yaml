@@ -1,0 +1,41 @@
+---
+seeds:
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+graph:
+  degree_cap: 4
+  k_uniform: 3
+  size: 256
+  generator: smallworld
+code:
+  density: 0.08
+  css_variant: css-b
+  rowop_rate: 0.15
+sampler:
+  sweeps: 300
+  worm_weight: 0.35
+  ladder: 3
+  checkpoints: 2
+spectrum:
+  k_points: 48
+  modes: 3
+gauge:
+  closure_tol: 0.0005
+  ward_tol: 0.0005
+interact:
+  steps: 96
+  dt: 0.02
+  measure: extended
+  fit: default
+filters: ../filters/default.yaml
+outputs:
+  layout: per-seed
+  keep_intermediate: true
+rules:
+  - id: 0
+    label: default
+  - id: 1
+    label: variant-a

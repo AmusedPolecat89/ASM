@@ -28,6 +28,7 @@ pub enum OpsVariant {
     Alt,
 }
 
+#[allow(clippy::derivable_impls)]
 impl Default for OpsVariant {
     fn default() -> Self {
         OpsVariant::Default

@@ -15,10 +15,21 @@ asm-rg = { path = "../asm-rg" }
 asm-exp = { path = "../asm-exp" }
 asm-spec = { path = "../asm-spec" }
 asm-gauge = { path = "../asm-gauge" }
+asm-int = { path = "../asm-int" }
+asm-land = { path = "../asm-land" }
+asm-thy = { path = "../asm-thy" }
+asm-host = { path = "../asm-host" }
+asm-dsr = { path = "../asm-dsr" }
+asm-web = { path = "../asm-web" }
 clap = { version = "4.5", features = ["derive"] }
 serde = { workspace = true }
 serde_json = { workspace = true }
 serde_yaml = "0.9"
 csv = "1.3"
 glob = "0.3"
+hex = "0.4"
+walkdir = { workspace = true }
+zip = { version = "0.6", default-features = false, features = ["deflate"] }
+sha2 = { workspace = true }
+rusqlite = { version = "0.29", features = ["bundled"] }
 

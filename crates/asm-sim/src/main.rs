@@ -20,21 +20,34 @@ use asm_mcmc::{run, RunSummary};
 use clap::{Args as ClapArgs, Parser, Subcommand};
 use commands::{
     ablation::{self, AblationArgs},
+    assert::{self, AssertArgs},
+    assert_batch::{self, AssertBatchArgs},
     deform::{self, DeformArgs},
     demo::{self, DemoArgs},
     doctor::{self, DoctorArgs},
     extract::{self, ExtractArgs},
+    fit_couplings::{self, FitCouplingsArgs},
+    fit_running::{self, FitRunningArgs},
     gaps::{self, GapsArgs},
     gauge::{self, GaugeArgs},
     gauge_batch::{self, GaugeBatchArgs},
     gauge_compare::{self, GaugeCompareArgs},
+    interact::{self, InteractArgs},
+    interact_batch::{self, InteractBatchArgs},
+    landscape::{self, LandscapeSubcommand},
+    paper_pack::{self, PaperPackArgs},
+    plugin::{self, PluginArgs},
+    publish::{self, PublishArgs},
     report::{self, ReportArgs},
     rg::{self, RgArgs},
     rg_covariance::{self, RgCovarianceArgs},
     spectrum::{self, SpectrumArgs},
     spectrum_batch::{self, SpectrumBatchArgs},
+    submit::{self, SubmitArgs},
     sweep::{self, SweepArgs},
+    verify::{self, VerifyArgs},
     version::{self, VersionArgs},
+    web::{self, WebArgs},
 };
 use serde::Deserialize;
 use serde_json::json;
@@ -76,10 +89,39 @@ enum Command {
     Report(ReportArgs),
     /// Execute a deterministic ablation plan and persist reports.
     Ablation(AblationArgs),
+    /// Run theory assertions on a single vacuum.
+    Assert(AssertArgs),
+    /// Run theory assertions across a landscape run.
+    AssertBatch(AssertBatchArgs),
     /// Analyse a single state and emit deterministic spectrum artefacts.
     Spectrum(SpectrumArgs),
     /// Analyse many states and emit batched spectrum artefacts.
     SpectrumBatch(SpectrumBatchArgs),
+    /// Execute a single deterministic interaction experiment.
+    Interact(InteractArgs),
+    /// Execute a batch of interaction experiments.
+    InteractBatch(InteractBatchArgs),
+    /// Plan or execute deterministic landscape scans.
+    Landscape {
+        #[command(subcommand)]
+        command: LandscapeSubcommand,
+    },
+    /// Manage sandboxed plugins.
+    Plugin(PluginArgs),
+    /// Build a deterministic manuscript bundle for publication.
+    PaperPack(PaperPackArgs),
+    /// Assemble a reproducible bundle of artefacts for submission.
+    Publish(PublishArgs),
+    /// Fit couplings at a single scale without persisting the trajectory.
+    FitCouplings(FitCouplingsArgs),
+    /// Fit running couplings across an RG chain.
+    FitRunning(FitRunningArgs),
+    /// Submit a dataset bundle into the local registry.
+    Submit(SubmitArgs),
+    /// Verify bundle integrity against the local registry.
+    Verify(VerifyArgs),
+    /// Build static dashboards from the dataset registry.
+    Web(WebArgs),
     /// Verify repository health and replication prerequisites.
     Doctor(DoctorArgs),
     /// Run a minimal deterministic demo using the replication seeds.
@@ -176,8 +218,21 @@ fn main() -> Result<(), Box<dyn Error>> {
         Command::GaugeCompare(args) => gauge_compare::run(&args),
         Command::Report(args) => report::run(&args),
         Command::Ablation(args) => ablation::run(&args),
+        Command::Assert(args) => assert::run(&args),
+        Command::AssertBatch(args) => assert_batch::run(&args),
         Command::Spectrum(args) => spectrum::run(&args),
         Command::SpectrumBatch(args) => spectrum_batch::run(&args),
+        Command::Interact(args) => interact::run(&args),
+        Command::InteractBatch(args) => interact_batch::run(&args),
+        Command::Landscape { command } => landscape::run(&command),
+        Command::Plugin(args) => plugin::run(&args),
+        Command::PaperPack(args) => paper_pack::run(&args),
+        Command::Publish(args) => publish::run(&args),
+        Command::FitCouplings(args) => fit_couplings::run(&args),
+        Command::FitRunning(args) => fit_running::run(&args),
+        Command::Submit(args) => submit::run(&args),
+        Command::Verify(args) => verify::run(&args),
+        Command::Web(args) => web::run(&args),
         Command::Doctor(args) => doctor::run(&args),
         Command::Demo(args) => demo::run(&args),
         Command::Version(args) => version::run(&args),

@@ -1,0 +1,8 @@
+include:
+  - "**/spectrum_report.json"
+  - "**/gauge_report.json"
+  - "**/interaction_report.json"
+  - "**/LandscapeReport.json"
+  - "dashboards/*.md"
+copy_figures: true
+flatten_paths: true

@@ -1,0 +1,7 @@
+name = "graph_smallworld"
+version = "0.1.0"
+abi_version = 1
+capabilities = ["graph"]
+minimum_workspace = "0.16"
+license = "MIT"
+description = "Example small-world graph generator plugin"
