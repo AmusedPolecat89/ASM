@@ -35,6 +35,17 @@ class BenchResult:
     notes: Optional[str]
 
 
+@dataclass
+class AblationRow:
+    plan: str
+    metric: str
+    mean: Optional[float] = None
+    pass_rate: Optional[float] = None
+    minimum: Optional[float] = None
+    maximum: Optional[float] = None
+    notes: Optional[str] = None
+
+
 def load_json(path: Path) -> Optional[Any]:
     try:
         with path.open("r", encoding="utf8") as handle:
@@ -43,6 +54,22 @@ def load_json(path: Path) -> Optional[Any]:
         return None
     except json.JSONDecodeError:
         return None
+
+
+def as_float(value: Any) -> Optional[float]:
+    try:
+        if isinstance(value, bool):
+            return float(value)
+        if isinstance(value, (int, float)):
+            return float(value)
+        if isinstance(value, str):
+            stripped = value.strip()
+            if not stripped:
+                return None
+            return float(stripped)
+    except (TypeError, ValueError):
+        return None
+    return None
 
 
 def _find_numeric(data: Any, keys: Iterable[str]) -> Optional[Tuple[str, float]]:
@@ -335,6 +362,196 @@ def summarize_optional(path: Path) -> str:
     return "⚠️ skipped"
 
 
+def _merge_notes(existing: Optional[str], addition: Optional[str]) -> Optional[str]:
+    if not addition:
+        return existing
+    if not existing:
+        return addition
+    parts = {part.strip() for part in existing.split("; ") if part.strip()}
+    parts.update(part.strip() for part in addition.split("; ") if part.strip())
+    return "; ".join(sorted(parts)) if parts else existing
+
+
+def _normalise_plan_name(path: Path, payload: Dict[str, Any]) -> str:
+    for key in ("plan", "plan_name", "name"):
+        value = payload.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+    return path.stem
+
+
+def _normalise_metric_name(name: Any) -> Optional[str]:
+    if isinstance(name, str) and name.strip():
+        return name.strip()
+    return None
+
+
+def _rows_from_kpis(path: Path, plan: str, kpis: Dict[str, Any]) -> List[AblationRow]:
+    rows: List[AblationRow] = []
+    for metric_name, payload in kpis.items():
+        metric = _normalise_metric_name(metric_name)
+        if metric is None:
+            continue
+        mean = None
+        pass_rate = None
+        minimum = None
+        maximum = None
+        notes = None
+
+        if isinstance(payload, dict):
+            if "values" in payload and isinstance(payload["values"], list):
+                values = [as_float(item) for item in payload["values"]]
+                numeric = [val for val in values if val is not None]
+                if numeric:
+                    mean = sum(numeric) / len(numeric)
+                    minimum = min(numeric)
+                    maximum = max(numeric)
+            if mean is None:
+                mean = as_float(payload.get("mean"))
+            if minimum is None:
+                minimum = as_float(payload.get("min"))
+            if maximum is None:
+                maximum = as_float(payload.get("max"))
+            pass_rate = as_float(payload.get("pass_rate"))
+            if pass_rate is None and isinstance(payload.get("pass_rate_percent"), (int, float, str)):
+                percent = as_float(payload["pass_rate_percent"])
+                pass_rate = percent / 100.0 if percent is not None else None
+            if payload.get("all_pass") is True:
+                notes = _merge_notes(notes, "all pass")
+            elif payload.get("all_pass") is False:
+                notes = _merge_notes(notes, "failures observed")
+        elif isinstance(payload, list):
+            numeric = [as_float(item) for item in payload]
+            clean = [val for val in numeric if val is not None]
+            if clean:
+                mean = sum(clean) / len(clean)
+                minimum = min(clean)
+                maximum = max(clean)
+        elif isinstance(payload, (int, float)):
+            mean = float(payload)
+
+        if mean is None and minimum is None and maximum is None and pass_rate is None:
+            continue
+        rows.append(
+            AblationRow(
+                plan=plan,
+                metric=metric,
+                mean=mean,
+                pass_rate=pass_rate,
+                minimum=minimum,
+                maximum=maximum,
+                notes=notes,
+            )
+        )
+    return rows
+
+
+def _rows_from_registry_entries(entries: Iterable[Dict[str, Any]]) -> List[AblationRow]:
+    rows: List[AblationRow] = []
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        plan = entry.get("plan") or entry.get("plan_name")
+        metric = entry.get("metric") or entry.get("kpi")
+        plan_name = plan.strip() if isinstance(plan, str) else None
+        metric_name = _normalise_metric_name(metric)
+        if not plan_name or metric_name is None:
+            continue
+        rows.append(
+            AblationRow(
+                plan=plan_name,
+                metric=metric_name,
+                mean=as_float(entry.get("mean")),
+                pass_rate=as_float(entry.get("pass_rate")),
+                minimum=as_float(entry.get("min")) or as_float(entry.get("lo")),
+                maximum=as_float(entry.get("max")) or as_float(entry.get("hi")),
+                notes=str(entry.get("notes")) if entry.get("notes") else None,
+            )
+        )
+    return rows
+
+
+def parse_ablation_file(path: Path) -> List[AblationRow]:
+    payload = load_json(path)
+    if not isinstance(payload, dict):
+        if isinstance(payload, list):
+            return _rows_from_registry_entries(payload)  # type: ignore[arg-type]
+        return []
+    plan = _normalise_plan_name(path, payload)
+    rows: List[AblationRow] = []
+    kpis = payload.get("kpis")
+    if isinstance(kpis, dict):
+        rows.extend(_rows_from_kpis(path, plan, kpis))
+    if not rows and "entries" in payload and isinstance(payload["entries"], list):
+        rows.extend(_rows_from_registry_entries(payload["entries"]))
+    if not rows and "registry" in payload and isinstance(payload["registry"], list):
+        rows.extend(_rows_from_registry_entries(payload["registry"]))
+    return rows
+
+
+def discover_ablation_rows(artifacts: Path) -> List[AblationRow]:
+    candidates: List[Path] = []
+    seen: set[Path] = set()
+    search_roots = [
+        artifacts / "ablations",
+        artifacts / "runs" / "ablations",
+        artifacts / "runs" / "landscape" / "ablations",
+        artifacts / "runs" / "landscape" / "full" / "ablations",
+        artifacts / "replication" / "ablations",
+    ]
+    for root in search_roots:
+        if root.is_file() and root.suffix.lower() == ".json":
+            candidates.append(root)
+        elif root.is_dir():
+            for path in root.glob("**/*.json"):
+                candidates.append(path)
+    if not candidates:
+        for path in artifacts.glob("**/*ablation*.json"):
+            if path.is_file():
+                candidates.append(path)
+    rows: Dict[Tuple[str, str], AblationRow] = {}
+    for candidate in candidates:
+        resolved = candidate.resolve()
+        if resolved in seen:
+            continue
+        seen.add(resolved)
+        for row in parse_ablation_file(candidate):
+            key = (row.plan, row.metric)
+            existing = rows.get(key)
+            if existing is None:
+                rows[key] = row
+                continue
+            if existing.mean is None:
+                existing.mean = row.mean
+            if existing.pass_rate is None:
+                existing.pass_rate = row.pass_rate
+            if existing.minimum is None:
+                existing.minimum = row.minimum
+            if existing.maximum is None:
+                existing.maximum = row.maximum
+            existing.notes = _merge_notes(existing.notes, row.notes)
+    return sorted(rows.values(), key=lambda item: (item.plan, item.metric))
+
+
+def build_ablation_table(rows: List[AblationRow]) -> str:
+    if not rows:
+        return "No ablation registries were discovered."
+    header = "| Plan | Metric | Mean | Pass rate | Range | Notes |\n| --- | --- | --- | --- | --- | --- |"
+    body = []
+    for row in rows:
+        mean = fmt_float(row.mean) if row.mean is not None else "—"
+        pass_rate = f"{row.pass_rate * 100.0:.1f}%" if row.pass_rate is not None else "—"
+        if row.minimum is not None or row.maximum is not None:
+            lo = fmt_float(row.minimum) if row.minimum is not None else "—"
+            hi = fmt_float(row.maximum) if row.maximum is not None else "—"
+            rng = f"[{lo}, {hi}]"
+        else:
+            rng = "—"
+        notes = row.notes or ""
+        body.append(f"| {row.plan} | {row.metric} | {mean} | {pass_rate} | {rng} | {notes} |")
+    return "\n".join([header] + body)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Collate heavy run results")
     parser.add_argument("--in", dest="artifacts", required=True, help="Directory containing collected artefacts")
@@ -469,6 +686,11 @@ def main() -> None:
             report_lines.append(f"![Assertion outcomes]({png_path.relative_to(out_dir)})")
     else:
         report_lines.append("Assertions summary unavailable (index missing).")
+    report_lines.append("")
+
+    ablation_rows = discover_ablation_rows(artifacts)
+    report_lines.append("## Ablations")
+    report_lines.append(build_ablation_table(ablation_rows))
     report_lines.append("")
 
     report_lines.append("## Optional Outputs")
