@@ -1,0 +1,29 @@
+{
+  "gauge": {
+    "closure_pass": false,
+    "factors": [
+      "u1"
+    ],
+    "ward_pass": true
+  },
+  "metadata": {
+    "closure_pass": false,
+    "factors": [
+      "u1"
+    ],
+    "gap_proxy": 0.24625999999999998,
+    "job_id": "46117421311_2",
+    "mass_gap": 0.24625999999999998,
+    "rule_id": 2,
+    "rule_label": "sigma_lock",
+    "seed": 46117421311,
+    "symmetry_rank": 1,
+    "ward_pass": true,
+    "xi": 1.49065
+  },
+  "spectrum": {
+    "k_points": 48,
+    "modes": 3,
+    "spectral_gap": 0.24625999999999998
+  }
+}

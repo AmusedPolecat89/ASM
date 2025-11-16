@@ -1,0 +1,66 @@
+{
+  "standard_models": [
+    {
+      "closure_pass": false,
+      "factors": [
+        "u1"
+      ],
+      "gap_proxy": 0.24786000000000002,
+      "job_id": "46117421327_2",
+      "mass_gap": 0.24786000000000002,
+      "rule_id": 2,
+      "rule_label": "sigma_lock",
+      "seed": 46117421327,
+      "symmetry_rank": 1,
+      "ward_pass": true,
+      "xi": 1.49465
+    },
+    {
+      "closure_pass": false,
+      "factors": [
+        "u1"
+      ],
+      "gap_proxy": 0.24625999999999998,
+      "job_id": "46117421311_2",
+      "mass_gap": 0.24625999999999998,
+      "rule_id": 2,
+      "rule_label": "sigma_lock",
+      "seed": 46117421311,
+      "symmetry_rank": 1,
+      "ward_pass": true,
+      "xi": 1.49065
+    },
+    {
+      "closure_pass": true,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "gap_proxy": 0.24008000000000002,
+      "job_id": "46117421327_3",
+      "mass_gap": 0.24008000000000002,
+      "rule_id": 3,
+      "rule_label": "phi_patch",
+      "seed": 46117421327,
+      "symmetry_rank": 2,
+      "ward_pass": true,
+      "xi": 1.4752
+    },
+    {
+      "closure_pass": true,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "gap_proxy": 0.23784,
+      "job_id": "46117421311_3",
+      "mass_gap": 0.23784,
+      "rule_id": 3,
+      "rule_label": "phi_patch",
+      "seed": 46117421311,
+      "symmetry_rank": 2,
+      "ward_pass": true,
+      "xi": 1.4696
+    }
+  ]
+}

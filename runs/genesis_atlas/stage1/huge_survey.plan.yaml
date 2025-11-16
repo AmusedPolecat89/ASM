@@ -1,0 +1,48 @@
+---
+seeds:
+  - 1
+  - 171
+  - 4010954922
+  - 4010954923
+  - 46117421311
+  - 46117421327
+  - 1152921504606847146
+  - 1152921504606847163
+graph:
+  degree_cap: 4
+  k_uniform: 3
+  size: 192
+  generator: hybrid
+code:
+  density: 0.08
+  css_variant: css-b
+  rowop_rate: 0.18
+sampler:
+  sweeps: 256
+  worm_weight: 0.35
+  ladder: 3
+  checkpoints: 1
+spectrum:
+  k_points: 48
+  modes: 3
+gauge:
+  closure_tol: 0.001
+  ward_tol: 0.0015
+interact:
+  steps: 48
+  dt: 0.02
+  measure: default
+  fit: default
+filters: ../filters/default.yaml
+outputs:
+  layout: flat
+  keep_intermediate: true
+rules:
+  - id: 0
+    label: theta_glide
+  - id: 1
+    label: delta_flux
+  - id: 2
+    label: sigma_lock
+  - id: 3
+    label: phi_patch
