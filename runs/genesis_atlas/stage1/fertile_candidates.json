@@ -1,0 +1,669 @@
+{
+  "candidates": [
+    {
+      "c_est": 1.1957200000000001,
+      "energy_final": -1.09893,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.14946500000000001,
+        0.24946500000000002,
+        0.34946499999999997
+      ],
+      "gap_proxy": 0.24786000000000002,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/46117421327_2",
+      "job_id": "46117421327_2",
+      "lambda_h": 0.029786,
+      "rule_id": 2,
+      "rule_label": "sigma_lock",
+      "seed": 46117421327,
+      "xi": 1.49465
+    },
+    {
+      "c_est": 1.19252,
+      "energy_final": -1.09813,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.149065,
+        0.249065,
+        0.34906499999999996
+      ],
+      "gap_proxy": 0.24625999999999998,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/46117421311_2",
+      "job_id": "46117421311_2",
+      "lambda_h": 0.029626,
+      "rule_id": 2,
+      "rule_label": "sigma_lock",
+      "seed": 46117421311,
+      "xi": 1.49065
+    },
+    {
+      "c_est": 1.18016,
+      "energy_final": -1.09504,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.14752,
+        0.24752000000000002,
+        0.34752
+      ],
+      "gap_proxy": 0.24008000000000002,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/46117421327_3",
+      "job_id": "46117421327_3",
+      "lambda_h": 0.029008,
+      "rule_id": 3,
+      "rule_label": "phi_patch",
+      "seed": 46117421327,
+      "xi": 1.4752
+    },
+    {
+      "c_est": 1.17568,
+      "energy_final": -1.09392,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.14696,
+        0.24696,
+        0.34696
+      ],
+      "gap_proxy": 0.23784,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/46117421311_3",
+      "job_id": "46117421311_3",
+      "lambda_h": 0.028784000000000004,
+      "rule_id": 3,
+      "rule_label": "phi_patch",
+      "seed": 46117421311,
+      "xi": 1.4696
+    },
+    {
+      "c_est": 1.14616,
+      "energy_final": -1.08654,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.14327,
+        0.24327000000000001,
+        0.34326999999999996
+      ],
+      "gap_proxy": 0.22308,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/171_1",
+      "job_id": "171_1",
+      "lambda_h": 0.027308,
+      "rule_id": 1,
+      "rule_label": "delta_flux",
+      "seed": 171,
+      "xi": 1.4327
+    },
+    {
+      "c_est": 1.14152,
+      "energy_final": -1.08538,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.14269,
+        0.24269000000000002,
+        0.34269
+      ],
+      "gap_proxy": 0.22076,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/46117421327_1",
+      "job_id": "46117421327_1",
+      "lambda_h": 0.027076000000000003,
+      "rule_id": 1,
+      "rule_label": "delta_flux",
+      "seed": 46117421327,
+      "xi": 1.4269
+    },
+    {
+      "c_est": 1.1396000000000002,
+      "energy_final": -1.0849,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.14245000000000002,
+        0.24245,
+        0.34245
+      ],
+      "gap_proxy": 0.2198,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/46117421311_1",
+      "job_id": "46117421311_1",
+      "lambda_h": 0.026979999999999997,
+      "rule_id": 1,
+      "rule_label": "delta_flux",
+      "seed": 46117421311,
+      "xi": 1.4245
+    },
+    {
+      "c_est": 1.1393600000000002,
+      "energy_final": -1.08484,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.14242000000000002,
+        0.24242000000000002,
+        0.34242
+      ],
+      "gap_proxy": 0.21968000000000004,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1_1",
+      "job_id": "1_1",
+      "lambda_h": 0.026968,
+      "rule_id": 1,
+      "rule_label": "delta_flux",
+      "seed": 1,
+      "xi": 1.4242
+    },
+    {
+      "c_est": 1.13924,
+      "energy_final": -1.08481,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.142405,
+        0.242405,
+        0.34240499999999996
+      ],
+      "gap_proxy": 0.21961999999999998,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1152921504606847163_2",
+      "job_id": "1152921504606847163_2",
+      "lambda_h": 0.026962,
+      "rule_id": 2,
+      "rule_label": "sigma_lock",
+      "seed": 1152921504606847163,
+      "xi": 1.42405
+    },
+    {
+      "c_est": 1.13856,
+      "energy_final": -1.08464,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.14232,
+        0.24232,
+        0.34232
+      ],
+      "gap_proxy": 0.21928000000000003,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1152921504606847146_2",
+      "job_id": "1152921504606847146_2",
+      "lambda_h": 0.026928,
+      "rule_id": 2,
+      "rule_label": "sigma_lock",
+      "seed": 1152921504606847146,
+      "xi": 1.4232
+    },
+    {
+      "c_est": 1.1340400000000002,
+      "energy_final": -1.08351,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.14175500000000002,
+        0.241755,
+        0.341755
+      ],
+      "gap_proxy": 0.21702,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/4010954922_1",
+      "job_id": "4010954922_1",
+      "lambda_h": 0.026701999999999997,
+      "rule_id": 1,
+      "rule_label": "delta_flux",
+      "seed": 4010954922,
+      "xi": 1.4175499999999999
+    },
+    {
+      "c_est": 1.1340000000000001,
+      "energy_final": -1.0835,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.14175000000000001,
+        0.24175000000000002,
+        0.34175
+      ],
+      "gap_proxy": 0.21700000000000003,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/4010954923_1",
+      "job_id": "4010954923_1",
+      "lambda_h": 0.0267,
+      "rule_id": 1,
+      "rule_label": "delta_flux",
+      "seed": 4010954923,
+      "xi": 1.4175
+    },
+    {
+      "c_est": 1.0906,
+      "energy_final": -1.07265,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.136325,
+        0.236325,
+        0.336325
+      ],
+      "gap_proxy": 0.19530000000000003,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/4010954923_2",
+      "job_id": "4010954923_2",
+      "lambda_h": 0.024530000000000003,
+      "rule_id": 2,
+      "rule_label": "sigma_lock",
+      "seed": 4010954923,
+      "xi": 1.36325
+    },
+    {
+      "c_est": 1.09056,
+      "energy_final": -1.07264,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.13632,
+        0.23632000000000003,
+        0.33632
+      ],
+      "gap_proxy": 0.19528,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/4010954922_2",
+      "job_id": "4010954922_2",
+      "lambda_h": 0.024528,
+      "rule_id": 2,
+      "rule_label": "sigma_lock",
+      "seed": 4010954922,
+      "xi": 1.3632
+    },
+    {
+      "c_est": 1.0865200000000002,
+      "energy_final": -1.07163,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.13581500000000002,
+        0.23581500000000002,
+        0.335815
+      ],
+      "gap_proxy": 0.19326000000000004,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1152921504606847163_0",
+      "job_id": "1152921504606847163_0",
+      "lambda_h": 0.024326,
+      "rule_id": 0,
+      "rule_label": "theta_glide",
+      "seed": 1152921504606847163,
+      "xi": 1.35815
+    },
+    {
+      "c_est": 1.0858400000000001,
+      "energy_final": -1.07146,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.13573000000000002,
+        0.23573000000000002,
+        0.33573
+      ],
+      "gap_proxy": 0.19292000000000004,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1152921504606847146_0",
+      "job_id": "1152921504606847146_0",
+      "lambda_h": 0.024292,
+      "rule_id": 0,
+      "rule_label": "theta_glide",
+      "seed": 1152921504606847146,
+      "xi": 1.3573
+    },
+    {
+      "c_est": 1.07796,
+      "energy_final": -1.06949,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.134745,
+        0.234745,
+        0.33474499999999996
+      ],
+      "gap_proxy": 0.18897999999999998,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1152921504606847146_3",
+      "job_id": "1152921504606847146_3",
+      "lambda_h": 0.023898,
+      "rule_id": 3,
+      "rule_label": "phi_patch",
+      "seed": 1152921504606847146,
+      "xi": 1.34745
+    },
+    {
+      "c_est": 1.07728,
+      "energy_final": -1.06932,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.13466,
+        0.23466,
+        0.33466
+      ],
+      "gap_proxy": 0.18864000000000003,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1152921504606847163_3",
+      "job_id": "1152921504606847163_3",
+      "lambda_h": 0.023864000000000003,
+      "rule_id": 3,
+      "rule_label": "phi_patch",
+      "seed": 1152921504606847163,
+      "xi": 1.3466
+    },
+    {
+      "c_est": 1.01764,
+      "energy_final": -1.05441,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.127205,
+        0.22720500000000002,
+        0.32720499999999997
+      ],
+      "gap_proxy": 0.15882000000000002,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/171_2",
+      "job_id": "171_2",
+      "lambda_h": 0.020882,
+      "rule_id": 2,
+      "rule_label": "sigma_lock",
+      "seed": 171,
+      "xi": 1.2720500000000001
+    },
+    {
+      "c_est": 1.0142,
+      "energy_final": -1.05355,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.126775,
+        0.226775,
+        0.326775
+      ],
+      "gap_proxy": 0.15710000000000002,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1_2",
+      "job_id": "1_2",
+      "lambda_h": 0.02071,
+      "rule_id": 2,
+      "rule_label": "sigma_lock",
+      "seed": 1,
+      "xi": 1.26775
+    },
+    {
+      "c_est": 1.01332,
+      "energy_final": -1.05333,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.126665,
+        0.226665,
+        0.326665
+      ],
+      "gap_proxy": 0.15666000000000002,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/4010954922_3",
+      "job_id": "4010954922_3",
+      "lambda_h": 0.020666,
+      "rule_id": 3,
+      "rule_label": "phi_patch",
+      "seed": 4010954922,
+      "xi": 1.26665
+    },
+    {
+      "c_est": 1.01328,
+      "energy_final": -1.05332,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.12666,
+        0.22666000000000003,
+        0.32666
+      ],
+      "gap_proxy": 0.15664,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/4010954923_3",
+      "job_id": "4010954923_3",
+      "lambda_h": 0.020664000000000002,
+      "rule_id": 3,
+      "rule_label": "phi_patch",
+      "seed": 4010954923,
+      "xi": 1.2666
+    },
+    {
+      "c_est": 0.99692,
+      "energy_final": -1.04923,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.124615,
+        0.224615,
+        0.324615
+      ],
+      "gap_proxy": 0.14846,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/4010954923_0",
+      "job_id": "4010954923_0",
+      "lambda_h": 0.019846000000000003,
+      "rule_id": 0,
+      "rule_label": "theta_glide",
+      "seed": 4010954923,
+      "xi": 1.24615
+    },
+    {
+      "c_est": 0.9968800000000001,
+      "energy_final": -1.04922,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.12461000000000001,
+        0.22461,
+        0.32461
+      ],
+      "gap_proxy": 0.14844000000000002,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/4010954922_0",
+      "job_id": "4010954922_0",
+      "lambda_h": 0.019844,
+      "rule_id": 0,
+      "rule_label": "theta_glide",
+      "seed": 4010954922,
+      "xi": 1.2461
+    },
+    {
+      "c_est": 0.95696,
+      "energy_final": -1.03924,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.11962,
+        0.21962,
+        0.31962
+      ],
+      "gap_proxy": 0.12848,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/171_3",
+      "job_id": "171_3",
+      "lambda_h": 0.017848000000000003,
+      "rule_id": 3,
+      "rule_label": "phi_patch",
+      "seed": 171,
+      "xi": 1.1962
+    },
+    {
+      "c_est": 0.95352,
+      "energy_final": -1.03838,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.11919,
+        0.21919,
+        0.31919
+      ],
+      "gap_proxy": 0.12675999999999998,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1_3",
+      "job_id": "1_3",
+      "lambda_h": 0.017676,
+      "rule_id": 3,
+      "rule_label": "phi_patch",
+      "seed": 1,
+      "xi": 1.1919
+    },
+    {
+      "c_est": 0.86716,
+      "energy_final": -1.01679,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.108395,
+        0.208395,
+        0.308395
+      ],
+      "gap_proxy": 0.08358,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1152921504606847146_1",
+      "job_id": "1152921504606847146_1",
+      "lambda_h": 0.013358,
+      "rule_id": 1,
+      "rule_label": "delta_flux",
+      "seed": 1152921504606847146,
+      "xi": 1.08395
+    },
+    {
+      "c_est": 0.86648,
+      "energy_final": -1.01662,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.10831,
+        0.20831000000000002,
+        0.30831
+      ],
+      "gap_proxy": 0.08324000000000001,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1152921504606847163_1",
+      "job_id": "1152921504606847163_1",
+      "lambda_h": 0.013323999999999999,
+      "rule_id": 1,
+      "rule_label": "delta_flux",
+      "seed": 1152921504606847163,
+      "xi": 1.0831
+    },
+    {
+      "c_est": 0.8530800000000001,
+      "energy_final": -1.01327,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.10663500000000001,
+        0.206635,
+        0.306635
+      ],
+      "gap_proxy": 0.07654000000000001,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/46117421327_0",
+      "job_id": "46117421327_0",
+      "lambda_h": 0.012654,
+      "rule_id": 0,
+      "rule_label": "theta_glide",
+      "seed": 46117421327,
+      "xi": 1.06635
+    },
+    {
+      "c_est": 0.8524400000000001,
+      "energy_final": -1.01311,
+      "factors": [
+        "u1"
+      ],
+      "g": [
+        0.10655500000000001,
+        0.20655500000000002,
+        0.30655499999999997
+      ],
+      "gap_proxy": 0.07622000000000001,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/46117421311_0",
+      "job_id": "46117421311_0",
+      "lambda_h": 0.012622,
+      "rule_id": 0,
+      "rule_label": "theta_glide",
+      "seed": 46117421311,
+      "xi": 1.06555
+    },
+    {
+      "c_est": 0.80684,
+      "energy_final": -1.00171,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.100855,
+        0.200855,
+        0.300855
+      ],
+      "gap_proxy": 0.05342,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/171_0",
+      "job_id": "171_0",
+      "lambda_h": 0.010342,
+      "rule_id": 0,
+      "rule_label": "theta_glide",
+      "seed": 171,
+      "xi": 1.00855
+    },
+    {
+      "c_est": 0.8000400000000001,
+      "energy_final": -1.00001,
+      "factors": [
+        "u1",
+        "su2"
+      ],
+      "g": [
+        0.10000500000000001,
+        0.20000500000000002,
+        0.30000499999999997
+      ],
+      "gap_proxy": 0.05002,
+      "job_dir": "/workspace/ASM/runs/genesis_atlas/stage1/raw/1_0",
+      "job_id": "1_0",
+      "lambda_h": 0.010002,
+      "rule_id": 0,
+      "rule_label": "theta_glide",
+      "seed": 1,
+      "xi": 1.00005
+    }
+  ],
+  "criteria": {
+    "max_energy": 0.0,
+    "min_gap": 0.05
+  },
+  "fertile_count": 32,
+  "plan": "/workspace/ASM/runs/genesis_atlas/stage1/huge_survey.plan.yaml",
+  "report": "/workspace/ASM/runs/genesis_atlas/stage1/raw/landscape_report.json",
+  "stage1_root": "/workspace/ASM/runs/genesis_atlas/stage1/raw",
+  "total_jobs": 32
+}

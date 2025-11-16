@@ -1,0 +1,27 @@
+{
+  "reports": [
+    {
+      "avg_lambda_h": 0.029706,
+      "dg_dlog_xi": [
+        0.149265,
+        0.149265,
+        0.149265
+      ],
+      "entry_count": 2,
+      "rule_id": 2,
+      "rule_label": "sigma_lock"
+    },
+    {
+      "avg_lambda_h": 0.028896,
+      "dg_dlog_xi": [
+        0.14724,
+        0.14724,
+        0.14724
+      ],
+      "entry_count": 2,
+      "rule_id": 3,
+      "rule_label": "phi_patch"
+    }
+  ],
+  "total_rules": 2
+}
